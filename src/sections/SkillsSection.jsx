@@ -2,11 +2,12 @@ import React from 'react'
 import SectionTag from '../components/SectionTag'
 import styles from '../styles/SkillsSection.module.css'
 import SectionTitle from '../components/SectionTitle'
+import ArrowIcon from '../components/ArrowIcon'
 
 export default function SkillsSection() {
 
   const dev_skills = [
-    'HTML5 & CSS3', "Responsive Design" ,
+    'HTML5 & CSS3 / Responsive Design' ,
     "JavaScript (ES6+)" , "UI/UX" , "React JS" , "Next JS"
   ];
 
@@ -36,7 +37,7 @@ export default function SkillsSection() {
     <h2>Web Design & Development</h2>
     {dev_skills.map((item , index) => (
       <li key={index}>
-        {item}
+       <ArrowIcon height={12} width={12} fill="#fff" /> {item}
       </li>
     ))}
   </ul>
