@@ -1,9 +1,10 @@
 import React from 'react'
+import SkillsSection from './sections/SkillsSection';
 
 export default function App() {
   return (
-    <div style={{
-      fontFamily: "Instrument Serif" , fontSize : "48px" , fontWeight : 600
-    }}>portfolio App</div>
+  <>
+  <SkillsSection />
+  </>
   )
 }
