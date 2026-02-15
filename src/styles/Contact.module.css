@@ -1,0 +1,90 @@
+.contactSection {
+  width: 100%;
+  border-top: 1px solid #8888885c;
+    padding-block: 80px;
+    margin-top: 50px;
+}
+.contactSectionData {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 20px;
+  position: relative;
+}
+.left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+}
+.left h1 {
+  font-size: 80px;
+  line-height: 1.2;
+  font-family: "Instrument Serif" , sans-serif;
+  font-style: italic;
+}
+.left p {
+  max-width: 660px;
+  font-family: "Outfit" ,sans-serif;
+  font-size: 20px;
+  line-height: 1.6;
+  color: #888888;
+}
+
+.contactList {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  width: 100%;
+}
+.contactList li {
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  border-bottom: 1px solid #8888885d;
+  padding-block: 20px;
+  width: 100%;
+  transition: border .3s ease;
+}
+.contactList li:hover {
+  border-color: #ff0000;
+}
+.contactList li span {
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: 1px;
+  color: #888888;
+  font-family: "Jetbrains Mono" ,sans-serif;
+  opacity: .7;
+}
+.contactList li a {
+  font-family: "Outfit" ,sans-serif;
+  font-size: 18px;
+}
+
+
+.right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.right button {
+  height: 75px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid #88888865;
+  text-align: center;
+  font-size: 16px;
+  font-family: "jetbrains Mono" ,sans-serif;
+  transition: background .3s ease;
+}
+.right button:hover {
+  background-color: #ff0000;
+  color: #000;
+}
