@@ -1,5 +1,5 @@
 import React from "react";
-import { motion } from "framer-motion";
+import { motion, useAnimation } from "framer-motion";
 import styles from "../styles/Hero.module.css";
 
 import peakpx from "../assets/peakpx.jpg";
@@ -7,36 +7,39 @@ import peakpx from "../assets/peakpx.jpg";
 const LETTERS = ["B", "I", "L", "A", "L"];
 const IMAGES = [peakpx, peakpx, peakpx, peakpx, peakpx];
 
-// helper functions
+// helpers
 const random = (min, max) => Math.random() * (max - min) + min;
 
-const randomColor = () => {
-  const colors = ["#ff0000", "#ff7f50", "#00ffff", "#adff2f", "#ff69b4"];
-  return colors[Math.floor(Math.random() * colors.length)];
-};
+const COLORS = [
+  "#ff3cac", "#ff9f1c", "#8c1eff",
+  "#00ffd5", "#ff2d95", "#05ffa1", "#f5f300"
+];
 
-const randomFont = () => {
-  const fonts = [
-    "'Instrument Serif', serif",
-    "'JetBrains Mono', monospace",
-    "'Courier New', monospace",
-  ];
-  return fonts[Math.floor(Math.random() * fonts.length)];
-};
+const FONTS = [
+  "'Instrument Serif', serif",
+  "'JetBrains Mono', monospace",
+  "'Courier New', monospace",
+];
+
+const randomColor = () => COLORS[Math.floor(Math.random() * COLORS.length)];
+const randomFont = () => FONTS[Math.floor(Math.random() * FONTS.length)];
 
 export default function Hero() {
   const bannersData = LETTERS.map(() => {
-    const baseAnim = {
-      x: [0, random(-10, 10), 0],
+    const motionProps = {
+      x: [0, random(-8, 8), 0],
       y: [0, random(-5, 5), 0],
-      scale: [1, random(0.95, 1.05), 1],
-      rotate: [0, random(-5, 5), 0],
+      scale: [1, random(0.97, 1.03), 1],
+      rotate: [0, random(-3, 3), 0],
     };
 
     return {
-      baseAnim,
-      overlayAnim: {
-        ...baseAnim,
+      imageMotion: {
+        ...motionProps,
+        filter: ["brightness(0.8)", "brightness(0.9) hue-rotate(10deg)", "brightness(0.8) hue-rotate(-10deg)"]
+      },
+      overlayMotion: {
+        ...motionProps,
         color: [randomColor(), randomColor(), randomColor()],
         fontFamily: [randomFont(), randomFont(), randomFont()],
       },
@@ -55,27 +58,22 @@ export default function Hero() {
       <div className={styles.top}>
         {bannersData.map((data, index) => (
           <div className={styles.banner} key={index}>
-            {/* Motion container wraps both image and overlap */}
+            {/* Image motion */}
+            <motion.img
+              src={IMAGES[index]}
+              alt={`banner-${LETTERS[index]}`}
+              className={styles.bannerImg}
+              animate={data.imageMotion}
+              transition={data.transition}
+            />
+
+            {/* Letter overlay motion */}
             <motion.div
-              className={styles.motionWrapper}
-              animate={data.baseAnim}
+              className={styles.overlap}
+              animate={data.overlayMotion}
               transition={data.transition}
             >
-              <img
-                src={IMAGES[index]}
-                alt={`banner-${LETTERS[index]}`}
-                className={styles.bannerImg}
-              />
-              <div className={styles.overlap}>
-                <h1
-                  style={{
-                    color: data.overlayAnim.color[0],
-                    fontFamily: data.overlayAnim.fontFamily[0],
-                  }}
-                >
-                  {LETTERS[index]}
-                </h1>
-              </div>
+              <h1>{LETTERS[index]}</h1>
             </motion.div>
           </div>
         ))}

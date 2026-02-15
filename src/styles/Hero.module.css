@@ -11,61 +11,16 @@
 
 .top {
   width: 100%;
-  overflow: hidden;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   align-items: center;
-  flex-wrap: nowrap;
   height: 70vh;
 }
 
 .banner {
-  flex-shrink: 1;
-  height: 100%;
   position: relative;
-  overflow: hidden;
-}
-
-.overlap {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 110%;
   height: 100%;
-  background: rgba(13, 13, 13, 0.96);
-  backdrop-filter: blur(24px);
-  z-index: 2;
-
-  /* Framer Motion handles all animation */
-  will-change: transform, opacity;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  font-size: clamp(24px, 12vw, 120px);
-  font-weight: 800;
-  font-family: "Instrument Serif", serif;
-  letter-spacing: 0.05em;
-  contain: strict;
-
-  transition: all 0.9s ease; /* hover smoothness */
-}
-
-.overlap h1 {
-  font-family: "Instrument Serif", sans-serif;
-  font-size: 140px;
-}
-
-.banner:hover .overlap {
-  left: 400px; /* optional hover shift */
-}
-
-.motionWrapper {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  overflow: hidden; /* ensures image stays inside banner */
+  overflow: hidden; /* ensures image and overlap stay inside */
 }
 
 .bannerImg {
@@ -79,7 +34,33 @@
   filter: brightness(0.8);
 }
 
+.overlap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(13, 13, 13, 0.96);
+  backdrop-filter: blur(24px);
+  font-size: clamp(24px, 12vw, 120px);
+  font-weight: 800;
+  font-family: "Instrument Serif" !important;
+  letter-spacing: 0.05em;
+  transition: all 0.9s ease;
+}
+
+.overlap h1 {
+  font-size: 140px;
+}
+.banner:hover .overlap {
+  left: 400px;
+}
 
 .bottom {
   display: flex;
