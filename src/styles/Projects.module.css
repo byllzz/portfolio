@@ -1,0 +1,89 @@
+.projectsSection {
+  width: 100%;
+  border-top: 1px solid #888888dc;
+  padding-block: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+}
+.projectsHeader {
+  display: flex;
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 5px 30px;
+}
+.projectsHeader h1 {
+  font-size: 80px;
+  font-family: "Instrument Serif" ,sans-serif;
+  font-style: italic;
+  letter-spacing: -.5px;
+}
+.projectsHeader .filterBtns {
+  display: flex;
+  align-items: center;
+ gap: 15px;
+ overflow: hidden;
+}
+.filterBtns .filterBtn {
+  font-size: 12px;
+  font-family: "Jetbrains Mono" ,sans-serif;
+  letter-spacing: 1px;
+  color: #888888;
+  text-transform: uppercase;
+  padding: 8px 16px;
+  margin: 0;
+  transition: all .6s ease;
+}
+
+.filterBtns .filterBtn:hover {
+  border: 1px solid #ff0000;
+  color: #ff0000;
+}
+
+.filterBtns button.active {
+  background-color: #ff0000;
+  color: #000;
+}
+.projectsWrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  flex-wrap: nowrap;
+  scroll-behavior: smooth !important;
+  scrollbar-heigh: thin;
+  padding-bottom: 20px;
+ position: relative;
+ left: 30px;
+ margin-top: 40px;
+}
+.projectsWrapper::-webkit-scrollbar {
+  height: 2px;
+}
+
+.projectsWrapper::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 10px;
+}
+
+.projectsWrapper::-webkit-scrollbar-thumb {
+  background: #ff0000;
+  border-radius: 5px;
+}
+
+.projectsWrapper::-webkit-scrollbar-thumb:hover {
+  background: #f0f0f0;
+}
+
+.project {
+  height: 320px;
+  width: 410px;
+  border: 1px solid #ff0000;
+  flex-shrink: 0;
+}
