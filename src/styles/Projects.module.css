@@ -27,6 +27,7 @@
   align-items: center;
  gap: 15px;
  overflow: hidden;
+ padding: 2px;
 }
 .filterBtns .filterBtn {
   font-size: 12px;
@@ -36,11 +37,11 @@
   text-transform: uppercase;
   padding: 8px 16px;
   margin: 0;
-  transition: all .6s ease;
+  border-radius: 999px;
 }
 
 .filterBtns .filterBtn:hover {
-  border: 1px solid #ff0000;
+  border: 2px solid #ff0000;
   color: #ff0000;
 }
 
@@ -57,7 +58,7 @@
   overflow-y: hidden;
   flex-wrap: nowrap;
   scroll-behavior: smooth !important;
-  scrollbar-heigh: thin;
+  scrollbar-height: thin;
   padding-bottom: 20px;
  position: relative;
  left: 30px;
