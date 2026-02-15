@@ -17,6 +17,10 @@
 html {
   font-size: 16px;
   scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+html::-webkit-scrollbar {
+display: none;
 }
 html:focus-within {
   scroll-behavior: smooth;
@@ -37,7 +41,9 @@ body {
   background-color: var(--background);
   color: var(--txt-color);
   overflow-x: hidden;
+
 }
+
 ::selection {
   background-color: #ff0000;
   color: #fff;
