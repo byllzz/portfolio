@@ -2,6 +2,12 @@ import React from 'react'
 import styles from '../styles/About.module.css'
 
 export default function About() {
+  const exp_data = [
+    {id : 1 , total : 40+"+" , desc : "Design & dev projects"},
+    {id : 1 , total : 2 , desc : "Year's of experience"},
+    {id : 1 , total : 3 , desc : "SPECIALIZATIONS"},
+    {id : 1 , total : 12+"+" , desc : "Tecnologies"},
+  ]
   return (
     <section className={styles.aboutSection}>
       <div className={styles.aboutSectionData}>
@@ -9,27 +15,12 @@ export default function About() {
         <h1 className={styles.title}>Transforming Ideas Into Intelligent Digital Solutions</h1>
         <p className={styles.aboutDesc}>I'm Narmesh Kumar Sah, a creative technologist based in Kathmandu, Nepal. I specialize in Web Design & Development, Graphic Design, and AI/ML Algorithm Development. With just over 2 years of professional experience, I create innovative digital solutions that combine stunning visual design with powerful technology. I excel at developing responsive web applications, crafting compelling brand identities, and building intelligent AI-powered systems that solve real-world problems.</p>
         <div className={styles.aboutDataWrapper}>
-
-          <div className={styles.aboutData}>
-          <span>40+</span>
-          <p>DESIGN & DEV PROJECTS</p>
-          </div>
-
-          <div className={styles.aboutData}>
-          <span>2</span>
-          <p>Years of Experience</p>
-          </div>
-
-          <div className={styles.aboutData}>
-          <span>3</span>
-          <p>
-SPECIALIZATIONS</p>
-          </div>
-
-          <div className={styles.aboutData}>
-          <span>12+</span>
-          <p>Tecnologies</p>
-          </div>
+          {exp_data.map(item => (
+            <div key={item.id} className={styles.aboutData}>
+               <span>{item.total}</span>
+               <p>{item.desc}</p>
+            </div>
+          ))}
 
         </div>
         <div className={styles.resume}>
