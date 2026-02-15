@@ -1,0 +1,125 @@
+.aboutSection {
+  width: 100%;
+  border-top: 1px solid #888888dc;
+  padding-block: 50px;
+}
+.aboutSectionData {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+  margin: auto;
+}
+.tag {
+  font-size: 11px;
+  text-transform: uppercase;
+  color: #888888;
+  opacity: .7;
+  letter-spacing: 2px;
+  font-family: "Jetbrains Mono" ,sans-serif;
+  margin-bottom: 5px;
+}
+
+ .title {
+  font-size: 80px;
+  font-family: "Instrument Serif";
+  font-style: italic;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+}
+.aboutDesc {
+   font-family: "Outfit" ,sans-serif;
+  font-size: 20px;
+  line-height: 1.6;
+  color: #888888;
+}
+.aboutDataWrapper {
+  display: flex;
+  align-items: center;
+  gap: 180px;
+  width: 100%;
+  max-width: 100%;
+  margin: auto;
+  margin-top: 50px;
+}
+.aboutData {
+  display: flex;
+  flex-direction: column;
+  align-items:flex-start;
+  gap: 5px;
+}
+.aboutData span {
+  font-size: 40px;
+  font-style: italic;
+  color: #ff0000;
+  font-family: "Instrument Serif" ,sans-serif;
+  letter-spacing: -.5px;
+}
+.aboutData p {
+   font-size: 11px;
+  text-transform: uppercase;
+  color: #888888;
+  opacity: .7;
+  letter-spacing: 1px;
+  font-family: "Jetbrains Mono" ,sans-serif;
+}
+.resume {
+  width: 100%;
+  max-width: 100%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+.resumeBtn {
+  width: 220px;
+  height: 50px;
+  border: 1px solid #ff0000;
+  color: #ff0000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 12px;
+  letter-spacing: 1px;
+  font-family: "Outfit", sans-serif;
+  text-transform: uppercase;
+  position: relative;
+  overflow: hidden; /* IMPORTANT */
+  cursor: pointer;
+  transition: color 0.5s ease;
+}
+
+.resumeBtn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background: #ff0000;
+  z-index: -1;
+  transition: width 0.4s ease;
+}
+
+.resumeBtn:hover::before {
+  width: 100%;
+}
+.resumeBtn span {
+  position: relative;
+  z-index: 1;
+}
+.resumeBtn:hover {
+  color: #000;
+}
+.resumeBtn:hover svg {
+  fill: #000;
+}
+
+.resumeBtn svg {
+  fill: #ff0000;
+}
+
