@@ -26,6 +26,7 @@ export default function SkillsSection() {
 
   return (
 <section className={styles.skillsSection}>
+  <div className={styles.skillsSectionData}>
  <span className={styles.tag}>
   03 / tecnical experties
  </span>
@@ -37,7 +38,7 @@ export default function SkillsSection() {
     <h2>Web Design & Development</h2>
     {dev_skills.map((item , index) => (
       <li key={index}>
-       <ArrowIcon height={12} width={12} fill="#fff" /> {item}
+       <ArrowIcon height={10} width={10} fill="#fff" /> {item}
       </li>
     ))}
   </ul>
@@ -45,7 +46,7 @@ export default function SkillsSection() {
     <h2>Graphic & Brand Design</h2>
     {graphics_skills.map((item , index) => (
       <li key={index}>
-        {item}
+       <ArrowIcon height={10} width={10} fill="#fff" /> {item}
       </li>
     ))}
   </ul>
@@ -55,7 +56,7 @@ export default function SkillsSection() {
     <h2>Artificial Intelligence & ML</h2>
  {others_skills.map((item , index) => (
   <li key={index}>
-    {item}
+   <ArrowIcon height={10} width={10} fill="#fff" /> {item}
   </li>
  ))}
   </ul>
@@ -64,10 +65,11 @@ export default function SkillsSection() {
     <h2>Tools, Platforms & DevOps</h2>
     {tools.map((item , index)=> (
       <li key={index}>
-        {item}
+       <ArrowIcon height={10} width={10} fill="#fff" /> {item}
       </li>
     ))}
   </ul>
+ </div>
  </div>
  </section>
 

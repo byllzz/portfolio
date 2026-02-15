@@ -7,7 +7,7 @@ import Background from './sections/Background';
 export default function App() {
   return (
   <>
-  {/* <SkillsSection /> */}
+  <SkillsSection />
    <Background />
   <Contact />
   <Footer />
