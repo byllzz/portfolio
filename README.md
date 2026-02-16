@@ -15,7 +15,7 @@ Built for speed, aesthetics, and clean architecture — fully responsive and opt
  <img src="https://img.shields.io/badge/Built%20With-React%20%2B%20Tailwind-9B72FF.svg" /> </p> <br />
 
 
-[![Visit Portfolio](https://img.shields.io/badge/View-Moviio-9B72FF?style=flat)](https://portfolio.vercel.app) <br>
+[![Visit Portfolio](https://img.shields.io/badge/View-Portfolio-9B72FF?style=flat)](https://portfolio.vercel.app) <br>
 
  <img width="100%" alt="Portfolio Preview"
  src="./src/assets/preview.png" />
