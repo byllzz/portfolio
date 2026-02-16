@@ -75,3 +75,24 @@
   font-family: "Jetbrains Mono", sans-serif;
   color: #888888;
 }
+
+
+@media screen and (min-width :810px ) and (max-width : 1080px) {
+  .overlap h1 {
+    font-size: 100px;
+  }
+}
+@media screen and (max-width : 810px) {
+ .overlap h1 {
+  font-size: 80px;
+ }
+}
+
+@media screen and (max-width :480px) {
+  .overlap h1 {
+    font-size: 60px;
+  }
+  .bottom {
+    top: 0;
+  }
+}

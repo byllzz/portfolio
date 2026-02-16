@@ -97,6 +97,8 @@
   .contactSectionData {
     grid-template-columns: 1fr;
     gap: 60px;
+    width: 100%;
+    max-width: 100% !important;
   }
 }
 @media screen and (max-width : 768px) {
@@ -119,9 +121,15 @@
   .contactSectionData {
     width: 100% !important;
     max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .left {
+    width: 100%;
   }
   .left p {
     font-size: 18px;
+    max-width: 100%;
   }
 }
 @media screen and (max-width : 488px) {

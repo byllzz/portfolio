@@ -10,13 +10,13 @@ import Hero from './sections/Hero';
 export default function App() {
   return (
   <>
-  {/* <Hero /> */}
+  <Hero />
   <About />
-  {/* <Projects />
+  <Projects />
   <SkillsSection />
     <Background />
  <Contact />
-  <Footer /> */}
+  <Footer />
 
   </>
   )

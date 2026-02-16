@@ -64,12 +64,13 @@ font-family:"Jetbrains Mono" , sans-serif;
 @media screen and (max-width : 520px) {
   .footerLinks a {
     font-size: 10px;
+    opacity: 1;
   }
   .footerLinks {
     gap: 10px;
   }
   footer {
-    padding: 50px;
+    padding: 70px;
   }
   .availableTag {
     bottom: 10px;

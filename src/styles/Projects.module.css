@@ -148,4 +148,10 @@ font-style: italic;
     gap: 40px;
     left: 30px;
   }
+  .projectsHeader {
+    padding-inline: 20px;
+  }
+  .projectsHeader h1 {
+    font-size: 40px;
+  }
 }
