@@ -6,6 +6,7 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 30px;
+  overflow: hidden;
 }
 .projectsHeader {
   display: flex;
@@ -53,7 +54,7 @@
   width: 100%;
   display: flex;
   align-items: center;
-  gap: 30px;
+  gap: 60px;
   overflow-x: scroll;
   overflow-y: hidden;
   flex-wrap: nowrap;
@@ -119,4 +120,32 @@ font-style: italic;
 }
 .project:hover .projectInfo {
  opacity: 1;
+}
+
+
+@media  screen and (max-width : 700px) {
+  .projectsHeader {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  .projectsHeader h1 {
+    font-size: 60px;
+  }
+  .projectsSection {
+    padding-block: 40px;
+  }
+  .project {
+    height: 320px;
+    width: 400px;
+  }
+}
+@media screen and (max-width : 520px) {
+  .project {
+    width: 350px;
+  }
+  .projectsWrapper {
+    gap: 40px;
+    left: 30px;
+  }
 }
