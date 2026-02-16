@@ -80,21 +80,18 @@
 
 
 @media screen and (min-width :810px ) and (max-width : 1080px) {
-  .overlap .text {
+  .overlap .overlapTxt {
     font-size: 100px;
   }
 }
 @media screen and (max-width : 810px) {
- .overlap .text {
+ .overlap .overlapTxt {
   font-size: 80px;
  }
 }
 
 @media screen and (max-width :480px) {
-  .overlap .text {
+  .overlap .overlapTxt {
     font-size: 60px;
-  }
-  .bottom {
-    top: 0;
   }
 }

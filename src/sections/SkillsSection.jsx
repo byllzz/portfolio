@@ -2,8 +2,7 @@ import React, { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import styles from '../styles/SkillsSection.module.css'
 import ArrowIcon from '../components/ArrowIcon'
-import { dev_skills, graphics_skills, others_skills, tools } from "../data/skills"
-
+import { dev_skills, graphics_skills, others_skills, tools , skills_details } from "../data/skills"
 export default function SkillsSection() {
   const [openSkill, setOpenSkill] = useState(null) // Track which skill's detail is open
 
@@ -38,6 +37,19 @@ export default function SkillsSection() {
     show: { opacity: 1, height: "auto", transition: { duration: 0.3, ease: "easeOut" } },
     exit: { opacity: 0, height: 0, transition: { duration: 0.3, ease: "easeIn" } }
   }
+
+
+  const getSkillDetailIndex = (skill) => {
+  const allSkills = [
+    ...dev_skills,
+    ...graphics_skills,
+    ...others_skills,
+    ...tools
+  ];
+
+  return allSkills.indexOf(skill);
+};
+
 
   return (
     <section className={styles.skillsSection}>
@@ -84,27 +96,27 @@ export default function SkillsSection() {
                     className={styles.skillHeader}
                     onClick={() => setOpenSkill(openSkill === skill ? null : skill)}
                   >
-                    <ArrowIcon height={10} width={10} fill="#fff" />
+                    <div className={styles.header}>
+                      <ArrowIcon height={10} width={10} fill="#fff" />
                     {skill}
+                    </div>
+                    <AnimatePresence>
+  {openSkill === skill && (
+    <motion.div
+      className={styles.skillDetail}
+      variants={detailVariant}
+      initial="hidden"
+      animate="show"
+      exit="exit"
+    >
+      <p>{skills_details[getSkillDetailIndex(skill)]}</p>
+    </motion.div>
+  )}
+</AnimatePresence>
+
                   </div>
 
-                  <AnimatePresence>
-                    {openSkill === skill && (
-                      <motion.div
-                        className={styles.skillDetail}
-                        variants={detailVariant}
-                        initial="hidden"
-                        animate="show"
-                        exit="exit"
-                      >
-                        <p>
-                          {/* You can replace this with a more detailed description for each skill */}
-                          <strong>{skill}</strong>.
 
-                        </p>
-                      </motion.div>
-                    )}
-                  </AnimatePresence>
                 </motion.li>
               ))}
             </motion.ul>

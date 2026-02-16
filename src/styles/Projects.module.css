@@ -235,6 +235,7 @@
   justify-content: flex-start;
   gap: 2px;
   position: relative;
+  padding-inline: 10px;
 }
 .doorContent h1 {
 font-family: "Instrument Serif" , sans-serif;
@@ -297,5 +298,8 @@ font-weight: bold;
   }
   .projectsHeader h1 {
     font-size: 40px;
+  }
+  .projectGuide {
+    display: none;
   }
 }

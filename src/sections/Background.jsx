@@ -49,11 +49,6 @@ export default function Background() {
     })
   }
 
-   const fadeUp = {
-    hidden: { opacity: 0, y: 30 },
-    show: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } }
-  }
-
   return (
     <section className={styles.background}>
       <motion.div
@@ -70,7 +65,7 @@ export default function Background() {
         </motion.span>
 
         {/* Heading */}
-        <motion.h1 className={styles.heading} variants={fadeUp}>
+        <motion.h1 className={styles.heading} >
           Professional Background
         </motion.h1>
 

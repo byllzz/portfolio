@@ -11,7 +11,6 @@ export default function Test() {
         {letters.map((letter, index) => {
           // Random delay for pulse animation
           const pulseDelay = Math.random() * 2;
-          // Random delay for motion animation (slight variation)
           const motionDelay = Math.random() * 0.3;
 
           return (
