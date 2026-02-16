@@ -102,3 +102,52 @@ border: 3px solid #ff0000;
   font-family: "Outfit" ,sans-serif;
   margin-top: 5px;
 }
+
+
+@media screen and (max-width : 1265px) {
+  .background {
+    padding-inline: 50px;
+  }
+}
+@media screen and (max-width : 810px) {
+  .backgroundData h1 {
+    font-size: 60px;
+  }
+  .tag span:last-child {
+    height: 200px;
+  }
+}
+@media screen and (max-width : 660px) {
+  .backgroundData h1 {
+    font-size: 50px;
+  }
+  .tag span:last-child {
+    height: 230px;
+  }
+}
+@media screen and (max-width : 560px) {
+  .background {
+    padding-inline: 40px;
+  }
+  .backgroundData h1 {
+    font-size: 50px;
+  }
+  .tag span:last-child {
+    height: 260px  };
+}
+@media screen and (max-width : 480px) {
+  .backgroundData h1 {
+    font-size: 35px;
+  }
+  .tag span:last-child {
+    height: 290px;
+  }
+}
+@media screen and (max-width : 420px) {
+  .backgroundData h1 {
+    font-size: 30px;
+  }
+  .tag span:last-child {
+    height: 330px;
+  }
+}
