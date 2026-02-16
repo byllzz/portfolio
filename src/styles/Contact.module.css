@@ -88,3 +88,55 @@
   background-color: #ff0000;
   color: #000;
 }
+@media screen and  ( max-width :1255px) {
+  .contactSection {
+    padding-inline: 50px;
+  }
+}
+@media screen and (max-width : 968px) {
+  .contactSectionData {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+}
+@media screen and (max-width : 768px) {
+  .left h1 {
+    font-size: 70px;
+  }
+}
+@media screen and (max-width : 668px) {
+  .left h1 {
+    font-size: 60px;
+  }
+}
+@media screen and (max-width : 588px) {
+  .left h1 {
+    font-size: 55px;
+  }
+  .contactSection {
+    padding:50px;
+  }
+  .contactSectionData {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  .left p {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width : 488px) {
+  .left h1 {
+    font-size: 40px;
+  }
+  .left p {
+    font-size: 16px;
+  }
+  .contactList li a {
+    font-size: 16px;
+  }
+}
+@media  screen and (max-width : 420px) {
+  .left h1 {
+    font-size: 35px;
+  }
+}

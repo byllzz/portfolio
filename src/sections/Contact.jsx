@@ -9,17 +9,20 @@ export default function Contact() {
       <h1>Let's create something <br />extraordinary</h1>
       <p>Whether you need a stunning web experience, captivating graphic design, or intelligent AI-powered solutions, I'm ready to collaborate. Let's bring your vision to life with creativity, code, and cutting-edge technology.</p>
            <ul className={styles.contactList}>
-      <li>
-        <span>Email</span>
-        <a href="">Bilalmlkdev@gmail.com</a>
-      </li>
+     <li>
+  <span>Email</span>
+  <a href="mailto:bilalmlkdev@gmail.com?subject=Contact%20from%20Portfolio&body=Hi%20Bilal," aria-label='Send email to Bilal Malik'>
+    bilalmlkdev@gmail.com
+  </a>
+</li>
+
       <li>
         <span>Location</span>
-        <a href="">Chachran Sharif , Pakistan</a>
+        <a >Chachran Sharif , Pakistan</a>
       </li>
       <li>
         <span>Github</span>
-        <a href="">github.com/byllzz</a>
+        <a href="https://github.com/byllzz" target='_blank' aria-label='Follow Bilal on Github 😛'>github.com/byllzz</a>
       </li>
      </ul>
      </div>

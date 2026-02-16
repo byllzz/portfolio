@@ -59,3 +59,19 @@ font-family:"Jetbrains Mono" , sans-serif;
   letter-spacing: 1px;
   color: #888888;
 }
+
+
+@media screen and (max-width : 520px) {
+  .footerLinks a {
+    font-size: 10px;
+  }
+  .footerLinks {
+    gap: 10px;
+  }
+  footer {
+    padding: 50px;
+  }
+  .availableTag {
+    bottom: 10px;
+  }
+}
