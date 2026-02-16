@@ -39,10 +39,6 @@ export default function Background() {
     show: { opacity: 1, x: 0, transition: { duration: 0.8, ease: "easeOut" } }
   }
 
-  const fadeScale = {
-    hidden: { opacity: 0, scale: 0.8 },
-    show: { opacity: 1, scale: 1, transition: { duration: 0.8, ease: "easeInOut" } }
-  }
 
   const fadeSlideUp = {
     hidden: { opacity: 0, y: 40 },
@@ -51,6 +47,11 @@ export default function Background() {
       y: 0,
       transition: { duration: 0.8, delay: i * 0.2, ease: "easeOut" }
     })
+  }
+
+   const fadeUp = {
+    hidden: { opacity: 0, y: 30 },
+    show: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } }
   }
 
   return (
@@ -69,7 +70,7 @@ export default function Background() {
         </motion.span>
 
         {/* Heading */}
-        <motion.h1 className={styles.heading} variants={fadeScale}>
+        <motion.h1 className={styles.heading} variants={fadeUp}>
           Professional Background
         </motion.h1>
 

@@ -1,7 +1,7 @@
 .projectsSection {
   width: 100%;
-  border-top: 1px solid #888888dc;
-  padding-block: 80px;
+ border-top: 1px solid #88888866;
+  padding-block: 90px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -60,7 +60,7 @@
   flex-wrap: nowrap;
   scroll-behavior: smooth !important;
   scrollbar-height: thin;
-  padding-bottom: 20px;
+  padding-bottom: 30px;
  position: relative;
  left: 30px;
  margin-top: 40px;
@@ -89,11 +89,6 @@
   flex-shrink: 0;
   position: relative;
   perspective: 1400px;
-
-    /* background-image:
-    linear-gradient(#e1e1e12b 1px, transparent 1px),
-    linear-gradient(90deg, #e1e1e144 1px, transparent 1px);
-  background-size:5px 5px; */
    background: rgba(13, 13, 13, 0.96);
 }
 
@@ -115,7 +110,8 @@
   /* background: linear-gradient(145deg, #8b5e3c, #654321); */
  background: rgba(13, 13, 13, 0.96);
  backdrop-filter: blur(45px);
-  border: 3px solid #432100;
+  border: 2px solid #88888866;
+  /* border: 3px solid #432100; */
   border-radius: 6px;
   position: absolute;
   top: 0;
@@ -195,25 +191,22 @@
 }
 
 .doorContent {
-  position: absolute;
-  inset: 0;
-  width: 100%;
+  position:absolute;
+  left: 0;
+  top:0;
+width: 100%;
   height: 100%;
   z-index: 2;
   display: grid;
   grid-template-rows: 50% 50%;
   align-items: center;
+  gap: 10px;
   justify-content: center;
-  opacity: 1;
   transform: translateY(20px) scale(0.95);
   transition:
-    opacity 0.6s ease 0.6s,
-    transform 0.6s ease 0.6s;
-}
-
-.skyDoor:hover .doorContent {
-  opacity: 1;
-  transform: translateY(0) scale(1);
+    opacity 0.4s ease 0.4s,
+    transform 0.4s ease 0.4s;
+    padding-inline: 10px;
 }
 
  .projectShot {
@@ -221,7 +214,6 @@
   height: 100%;
   object-fit: cover;
   z-index: -1;
-  scale: 1.2;
   border-radius: 12px;
 }
 
@@ -231,6 +223,7 @@
   align-items: flex-start;
   justify-content: flex-start;
   gap: 8px;
+  position: relative;
 }
 .doorContent h1 {
 font-family: "Instrument Serif" , sans-serif;
@@ -247,10 +240,21 @@ font-weight: bold;
 }
 
 .projectInfo p {
-  font-size: 12px;
+  font-size: 16px;
   font-family: "Outfit" ,sans-serif;
 }
-
+.liveBtn {
+  position: absolute;
+  right: 20px;
+  top: -20px;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+}
 @media  screen and (max-width : 700px) {
   .projectsHeader {
     flex-direction: column;
