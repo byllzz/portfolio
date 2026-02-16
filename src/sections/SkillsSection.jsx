@@ -99,7 +99,8 @@ export default function SkillsSection() {
                       >
                         <p>
                           {/* You can replace this with a more detailed description for each skill */}
-                          This is a brief detail about <strong>{skill}</strong>. Add info, examples, or tips here.
+                          <strong>{skill}</strong>.
+
                         </p>
                       </motion.div>
                     )}

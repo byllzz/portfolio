@@ -42,11 +42,11 @@ export default function Projects () {
       >
         <h1>Projects</h1>
         <div className={styles.filterBtns}>
-          {["all", "graphic", "web", "ai/ml"].map((filter,i) => (
+          {['all', 'web', 'tool'].map((filter, i) => (
             <motion.button
               key={filter}
               onClick={() => setActiveFilter(filter)}
-              className={`${styles.filterBtn} ${activeFilter === filter ? styles.active : ""}`}
+              className={`${styles.filterBtn} ${activeFilter === filter ? styles.active : ''}`}
               custom={i}
               variants={buttonVariant}
               initial="hidden"
@@ -59,14 +59,9 @@ export default function Projects () {
       </motion.div>
 
       {/* Projects */}
-      <motion.div
-        className={styles.projectsWrapper}
-        layout
-        initial="hidden"
-        animate="show"
-      >
+      <motion.div className={styles.projectsWrapper} layout initial="hidden" animate="show">
         <AnimatePresence>
-          {filterProjects.map((item,i) => (
+          {filterProjects.map((item, i) => (
             <motion.div
               key={item.id}
               className={styles.project}
@@ -74,18 +69,30 @@ export default function Projects () {
               initial="hidden"
               animate="show"
               exit="exit"
-              custom={i}  // stagger each project
+              custom={i} // stagger each project
               layout
             >
-              <img src={item.img} alt="project-screenshot" className={styles.projectShot} />
-              <div className={styles.projectInfo}>
-                <h1>{item.title}</h1>
-                <span>{item.category}</span>
+              <div className={styles.skyDoor}>
+                <div className={styles.doorLeft}>
+                  <div className={styles.doorHandle}></div>
+                </div>
+                <div className={styles.doorRight}>
+                  <div className={styles.doorHandle}></div>
+                </div>
               </div>
+              <div className={styles.doorContent}>
+                              <img src={item.img} alt="project-screenshot" className={styles.projectShot} />
+              <div className={styles.projectInfo}>
+                  <h1>{item.title}</h1>
+                <span>{item.category}</span> <span>{item.tech}</span>
+                <p>{item.desc}</p>
+              </div>
+              </div>
+
             </motion.div>
           ))}
         </AnimatePresence>
       </motion.div>
     </section>
-  )
+  );
 }
