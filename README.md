@@ -1,4 +1,4 @@
-# <a href="https://moviio.vercel.app" target="_blank">Bilal Malik — Frontend Developer Portfolio</a>
+# <a href="https://bilalmlk-portfolio.vercel.app" target="_blank">Bilal Malik — Frontend Developer Portfolio</a>
 
 **Bilal Malik Portfolio** is a modern, motion-driven frontend showcase built with **React** & **Tailwind CSS**.
 It highlights high-performance UI, smooth animations, immersive interactions, and creative frontend engineering.
@@ -15,7 +15,7 @@ Built for speed, aesthetics, and clean architecture — fully responsive and opt
  <img src="https://img.shields.io/badge/Built%20With-React%20%2B%20Tailwind-9B72FF.svg" /> </p> <br />
 
 
-[![Visit Portfolio](https://img.shields.io/badge/View-Portfolio-9B72FF?style=flat)](https://portfolio.vercel.app) <br>
+[![Visit Portfolio](https://img.shields.io/badge/View-Portfolio-9B72FF?style=flat)](https://bilalmlk-portfolio.vercel.app) <br>
 
  <img width="100%" alt="Portfolio Preview"
  src="./src/assets/preview.png" />
@@ -95,7 +95,7 @@ See the [LICENSE](./LICENSE) file for more details.
 If you’d like to collaborate, report an issue, or share feedback, feel free to reach out:
 
 -  **Email:** bilalmlkdev@gmail.com
--  **Portfolio:** https://your-portfolio-url.com
+-  **Portfolio:** https://bilalmlk-portfolio.vercel.app
 -  **GitHub:** https://github.com/byllzz
 
 If you like the design or animations, please ⭐ **star the repository** — it really helps and motivates future updates!
