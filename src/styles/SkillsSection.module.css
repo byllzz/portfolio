@@ -3,25 +3,28 @@
   width: 100%;
   border-top: 1px solid #888888dc;
   padding-block: 80px;
+  box-sizing: border-box;
 }
+
 .skillsSectionData {
   width: 100%;
   max-width: 1200px;
   margin: auto;
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   align-items: flex-start;
   justify-content: center;
   gap: 20px;
   flex-wrap: nowrap;
 }
+
 .tag {
   font-size: 11px;
   text-transform: uppercase;
   color: #888888;
   opacity: .7;
   letter-spacing: 2px;
-  font-family: "Jetbrains Mono" ,sans-serif;
+  font-family: "Jetbrains Mono", sans-serif;
   margin-bottom: 10px;
 }
 
@@ -35,22 +38,22 @@
 
 .skillsData {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   width: 100%;
   gap: 30px;
   flex-wrap: nowrap;
 }
+
 .skillsData ul {
   list-style: none;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  flex: 1;
+  min-width: 200px; /* prevent too small columns */
 }
-.skillsData ul:nth-child(2) {
-  position: relative;
-  right: 10px;
-}
+
 .skillsData ul h2 {
   font-size: 20px;
   margin-bottom: 15px;
@@ -58,25 +61,44 @@
   color: #ff0000;
   font-style: italic;
 }
+
 .skillsData ul li {
   font-size: 16px;
-  font-family: "Outfit" ,sans-serif;
+  font-family: "Outfit", sans-serif;
   color: #888888;
   font-weight: 400;
   letter-spacing: .2px;
   margin-top: 10px;
   display: flex;
-  align-items:center;
-  gap: 10px;
+  flex-direction: column; /* allow skill + detail to stack */
+  gap: 5px;
+  width: 100%;
 }
 
+.skillHeader {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  user-select: none;
+}
 
-@media screen and (max-width : 1255px) {
+.skillDetail {
+  font-size: 14px;
+  color: #cccccc;
+  line-height: 1.4;
+  padding-left: 20px; /* indent to show as nested detail */
+  overflow: hidden;
+}
+
+/* media queries */
+@media screen and (max-width: 1255px) {
   .skillsSection {
     padding-inline: 50px;
   }
 }
-@media  screen and (min-width : 810px ) and (max-width : 1080px) {
+
+@media screen and (min-width: 810px) and (max-width: 1080px) {
   .skillsData {
     gap: 50px;
     flex-wrap: wrap;
@@ -84,12 +106,9 @@
   .skillsSection .title {
     font-size: 70px;
   }
-  .skillsData ul:nth-child(2) {
-  position: relative;
-  right: 0px;
 }
-}
-@media screen and (max-width : 810px) {
+
+@media screen and (max-width: 810px) {
   .skillsSection .title {
     font-size: 60px;
   }
@@ -97,12 +116,9 @@
     gap: 40px;
     flex-wrap: wrap;
   }
-  .skillsData ul:nth-child(2) {
-  position: relative;
-  right: 0px;
 }
-}
-@media screen and (max-width : 610px) {
+
+@media screen and (max-width: 610px) {
   .skillsSection {
     padding-inline: 30px;
   }
@@ -112,5 +128,6 @@
   }
   .skillsData {
     gap: 40px;
+    flex-wrap: wrap;
   }
 }

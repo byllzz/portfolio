@@ -1,61 +1,115 @@
-import React from 'react'
-import SectionTag from '../components/SectionTag'
+import React, { useState } from 'react'
+import { motion, AnimatePresence } from 'framer-motion'
 import styles from '../styles/SkillsSection.module.css'
-import SectionTitle from '../components/SectionTitle'
 import ArrowIcon from '../components/ArrowIcon'
-import { dev_skills, graphics_skills, others_skills, tools } from "../data/skills";
+import { dev_skills, graphics_skills, others_skills, tools } from "../data/skills"
 
 export default function SkillsSection() {
+  const [openSkill, setOpenSkill] = useState(null) // Track which skill's detail is open
+
+  const categories = [
+    { title: "Web Design & Development", skills: dev_skills },
+    { title: "Graphic & Brand Design", skills: graphics_skills },
+    { title: "Artificial Intelligence & ML", skills: others_skills },
+    { title: "Tools, Platforms & DevOps", skills: tools }
+  ]
+
+  // Variants
+  const fadeSlideLeft = {
+    hidden: { opacity: 0, x: -40 },
+    show: { opacity: 1, x: 0, transition: { duration: 0.8, ease: "easeOut" } }
+  }
+
+  const fadeScale = {
+    hidden: { opacity: 0, scale: 0.9 },
+    show: { opacity: 1, scale: 1, transition: { duration: 0.8, ease: "easeOut" } }
+  }
+
+  const listItem = {
+    hidden: { opacity: 0, x: -20 },
+    show: i => ({
+      opacity: 1, x: 0,
+      transition: { delay: 0.2 + i * 0.1, duration: 0.5, ease: "easeOut" }
+    })
+  }
+
+  const detailVariant = {
+    hidden: { opacity: 0, height: 0 },
+    show: { opacity: 1, height: "auto", transition: { duration: 0.3, ease: "easeOut" } },
+    exit: { opacity: 0, height: 0, transition: { duration: 0.3, ease: "easeIn" } }
+  }
 
   return (
-<section className={styles.skillsSection}>
-  <div className={styles.skillsSectionData}>
- <span className={styles.tag}>
-  03 / tecnical experties
- </span>
- <h1 className={styles.title}>
-  skills, tools & tecnologies
- </h1>
- <div className={styles.skillsData}>
-  <ul role='development'>
-    <h2>Web Design & Development</h2>
-    {dev_skills.map((item , index) => (
-      <li key={index}>
-       <ArrowIcon height={10} width={10} fill="#fff" /> {item}
-      </li>
-    ))}
-  </ul>
-  <ul role='graphics_skills'>
-    <h2>Graphic & Brand Design</h2>
-    {graphics_skills.map((item , index) => (
-      <li key={index}>
-       <ArrowIcon height={10} width={10} fill="#fff" /> {item}
-      </li>
-    ))}
-  </ul>
+    <section className={styles.skillsSection}>
+      <div className={styles.skillsSectionData}>
+        <motion.span
+          className={styles.tag}
+          variants={fadeSlideLeft}
+          initial="hidden"
+          animate="show"
+        >
+          03 / Technical Expertise
+        </motion.span>
 
+        <motion.h1
+          className={styles.title}
+          variants={fadeScale}
+          initial="hidden"
+          animate="show"
+        >
+          Skills, Tools & Technologies
+        </motion.h1>
 
-  <ul role='AI'>
-    <h2>Artificial Intelligence & ML</h2>
- {others_skills.map((item , index) => (
-  <li key={index}>
-   <ArrowIcon height={10} width={10} fill="#fff" /> {item}
-  </li>
- ))}
-  </ul>
+        <div className={styles.skillsData}>
+          {categories.map((cat, ci) => (
+            <motion.ul
+              key={ci}
+              role={cat.title}
+              initial="hidden"
+              animate="show"
+              variants={{
+                hidden: {},
+                show: { transition: { staggerChildren: 0.1 } }
+              }}
+            >
+              <h2>{cat.title}</h2>
+              {cat.skills.map((skill, i) => (
+                <motion.li
+                  key={i}
+                  custom={i}
+                  variants={listItem}
+                  className={styles.skillItem}
+                >
+                  <div
+                    className={styles.skillHeader}
+                    onClick={() => setOpenSkill(openSkill === skill ? null : skill)}
+                  >
+                    <ArrowIcon height={10} width={10} fill="#fff" />
+                    {skill}
+                  </div>
 
-  <ul role='tools'>
-    <h2>Tools, Platforms & DevOps</h2>
-    {tools.map((item , index)=> (
-      <li key={index}>
-       <ArrowIcon height={10} width={10} fill="#fff" /> {item}
-      </li>
-    ))}
-  </ul>
- </div>
- </div>
- </section>
-
+                  <AnimatePresence>
+                    {openSkill === skill && (
+                      <motion.div
+                        className={styles.skillDetail}
+                        variants={detailVariant}
+                        initial="hidden"
+                        animate="show"
+                        exit="exit"
+                      >
+                        <p>
+                          {/* You can replace this with a more detailed description for each skill */}
+                          This is a brief detail about <strong>{skill}</strong>. Add info, examples, or tips here.
+                        </p>
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+                </motion.li>
+              ))}
+            </motion.ul>
+          ))}
+        </div>
+      </div>
+    </section>
   )
 }
-
