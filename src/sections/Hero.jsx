@@ -3,10 +3,18 @@ import { motion } from 'framer-motion';
 import styles from '../styles/Hero.module.css';
 const letters = ['B','i','l','a','l','m','a','l','i','k'];
 
-import flower from '../assets/hero-banners/flowers.webp';
-import flower1 from '../assets/hero-banners/flowers1.webp';
+import bn1 from '../assets/hero-banners/banner1.webp';
+import bn2 from '../assets/hero-banners/banner2.webp';
+import bn3 from '../assets/hero-banners/banner3.webp';
+import bn4 from '../assets/hero-banners/banner4.webp';
+import bn5 from '../assets/hero-banners/banner5.webp';
+import bn6 from '../assets/hero-banners/banner6.webp';
+import bn7 from '../assets/hero-banners/banner7.webp';
+import bn8 from '../assets/hero-banners/banner8.webp';
+import bn9 from '../assets/hero-banners/banner9.webp';
+import bn10 from '../assets/hero-banners/banner10.webp';
 
- const banners = [flower, flower1];
+ const banners = [bn1, bn3 , bn2 , bn4 , bn5 ,  bn6 , bn7 , bn8 , bn9 , bn10];
 
 export default function Test() {
   return (

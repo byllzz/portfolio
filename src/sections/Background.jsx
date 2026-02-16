@@ -1,6 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import styles from '../styles/background.module.css'
+import styles from '../styles/Background.module.css'
 
 export default function Background() {
   const experiences = [
