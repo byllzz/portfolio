@@ -84,7 +84,7 @@ export default function Projects () {
                               <img src={item.img} alt="project-screenshot" className={styles.projectShot} />
               <div className={styles.projectInfo}>
                   <h1>{item.title}</h1>
-                <span>{item.category}</span> <span>{item.tech}</span>
+               <span>{item.tech}</span>
                 <p>{item.desc}</p>
               </div>
               </div>

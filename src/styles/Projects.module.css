@@ -54,7 +54,7 @@
   width: 100%;
   display: flex;
   align-items: center;
-  gap: 60px;
+  gap: 20px;
   overflow-x: scroll;
   overflow-y: hidden;
   flex-wrap: nowrap;
@@ -84,11 +84,17 @@
 }
 
 .project {
-  height: 450px;
-  width: 650px;
+  height: 350px;
+  width: 450px;
   flex-shrink: 0;
   position: relative;
   perspective: 1400px;
+
+    /* background-image:
+    linear-gradient(#e1e1e12b 1px, transparent 1px),
+    linear-gradient(90deg, #e1e1e144 1px, transparent 1px);
+  background-size:5px 5px; */
+   background: rgba(13, 13, 13, 0.96);
 }
 
 
@@ -106,7 +112,9 @@
 .doorRight {
   width: 50%;
   height: 100%;
-  background: linear-gradient(145deg, #8b5e3c, #654321);
+  /* background: linear-gradient(145deg, #8b5e3c, #654321); */
+ background: rgba(13, 13, 13, 0.96);
+ backdrop-filter: blur(45px);
   border: 3px solid #432100;
   border-radius: 6px;
   position: absolute;
@@ -193,7 +201,7 @@
   height: 100%;
   z-index: 2;
   display: grid;
-  grid-template-rows: 68% 30%;
+  grid-template-rows: 50% 50%;
   align-items: center;
   justify-content: center;
   opacity: 1;
@@ -213,18 +221,34 @@
   height: 100%;
   object-fit: cover;
   z-index: -1;
-  border: 1px solid red;
+  scale: 1.2;
+  border-radius: 12px;
 }
 
 .projectInfo {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  justify-content: flex-start;
+  gap: 8px;
 }
 .doorContent h1 {
 font-family: "Instrument Serif" , sans-serif;
-font-size: 38px;
-font-style: italic;
+font-size: 30px;
+font-style:normal;
+font-weight: bold;
+}
+.projectInfo span {
+  font-family: "Jetbrains Mono" ,sans-serif;
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: #888888;
+  text-transform: uppercase;
+}
+
+.projectInfo p {
+  font-size: 12px;
+  font-family: "Outfit" ,sans-serif;
 }
 
 @media  screen and (max-width : 700px) {
