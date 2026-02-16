@@ -1,45 +1,38 @@
 .heroSection {
   width: 100%;
-  max-width: 100%;
-  margin: auto;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 50px;
-  height: 100vh;
 }
 
 .top {
   width: 100%;
+  height: 70vh;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  align-items: center;
-  height: 70vh;
 }
 
 .banner {
   position: relative;
+  width: 100%;
   height: 100%;
-  overflow: hidden; /* ensures image and overlap stay inside */
+  overflow: hidden; /* 🔒 ensures everything stays inside */
 }
 
 .bannerImg {
   position: absolute;
-  top: 0;
-  left: 0;
+  inset: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
   z-index: 1;
-  filter: brightness(0.8);
 }
 
 .overlap {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  inset: 0;
   z-index: 2;
 
   display: flex;
@@ -48,28 +41,31 @@
 
   background: rgba(13, 13, 13, 0.96);
   backdrop-filter: blur(24px);
-  font-size: clamp(24px, 12vw, 120px);
-  font-weight: 800;
-  font-family: "Instrument Serif" !important;
-  letter-spacing: 0.05em;
-  transition: all 0.9s ease;
+
+  will-change: transform;
+  transition: all .8s ease;
 }
 
 .overlap h1 {
-  font-size: 140px;
+  font-size: clamp(60px, 12vw, 140px);
+  font-weight: 800;
+  font-family: "Instrument Serif", serif;
+  /* font-style: italic;  */
+  letter-spacing: 0.08em;
 }
+
 .banner:hover .overlap {
   left: 400px;
 }
-
 .bottom {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0;
-  position: relative;
-  top: 30px;
+  color: #888;
+  font-family: "JetBrains Mono", monospace;
+  margin-top: 20px;
 }
+
 
 .bottom span {
   font-family: "Jetbrains Mono", sans-serif;

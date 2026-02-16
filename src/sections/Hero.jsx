@@ -1,5 +1,5 @@
 import React from "react";
-import { motion, useAnimation } from "framer-motion";
+import { motion } from "framer-motion";
 import styles from "../styles/Hero.module.css";
 
 import peakpx from "../assets/peakpx.jpg";
@@ -7,7 +7,6 @@ import peakpx from "../assets/peakpx.jpg";
 const LETTERS = ["B", "I", "L", "A", "L"];
 const IMAGES = [peakpx, peakpx, peakpx, peakpx, peakpx];
 
-// helpers
 const random = (min, max) => Math.random() * (max - min) + min;
 
 const COLORS = [
@@ -36,15 +35,23 @@ export default function Hero() {
     return {
       imageMotion: {
         ...motionProps,
-        filter: ["brightness(0.8)", "brightness(0.9) hue-rotate(10deg)", "brightness(0.8) hue-rotate(-10deg)"]
+        filter: [
+          "brightness(0.8)",
+          "brightness(0.9) hue-rotate(10deg)",
+          "brightness(0.8) hue-rotate(-10deg)"
+        ]
       },
       overlayMotion: {
         ...motionProps,
         color: [randomColor(), randomColor(), randomColor()],
         fontFamily: [randomFont(), randomFont(), randomFont()],
       },
+      h1Motion: {
+        fontStyle: ["normal", "italic", "normal", "italic"],
+        color: ["#ffffff", randomColor(), "#ffffff", randomColor()],
+      },
       transition: {
-        duration: random(1, 3),
+        duration: random(2, 4),
         repeat: Infinity,
         repeatType: "mirror",
         ease: "easeInOut",
@@ -57,7 +64,18 @@ export default function Hero() {
     <section className={styles.heroSection}>
       <div className={styles.top}>
         {bannersData.map((data, index) => (
-          <div className={styles.banner} key={index}>
+          <motion.div
+            className={styles.banner}
+            key={index}
+            initial={{ y: -200, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{
+              type: "spring",
+              stiffness: 80,
+              damping: 12,
+              delay: index * 0.2, // stagger fall effect
+            }}
+          >
             {/* Image motion */}
             <motion.img
               src={IMAGES[index]}
@@ -73,9 +91,19 @@ export default function Hero() {
               animate={data.overlayMotion}
               transition={data.transition}
             >
-              <h1>{LETTERS[index]}</h1>
+              <motion.h1
+                animate={data.h1Motion}
+                transition={{
+                  duration: data.transition.duration,
+                  repeat: Infinity,
+                  repeatType: "mirror",
+                  ease: "easeInOut",
+                }}
+              >
+                {LETTERS[index]}
+              </motion.h1>
             </motion.div>
-          </div>
+          </motion.div>
         ))}
       </div>
 

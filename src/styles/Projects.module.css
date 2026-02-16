@@ -142,7 +142,7 @@ font-style: italic;
 }
 @media screen and (max-width : 520px) {
   .project {
-    width: 350px;
+    width: 380px;
   }
   .projectsWrapper {
     gap: 40px;
