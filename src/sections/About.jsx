@@ -4,10 +4,10 @@ import styles from '../styles/About.module.css'
 
 export default function About() {
   const exp_data = [
-    { id: 1, total: "40+", desc: "Design & dev projects" },
-    { id: 2, total: 2, desc: "Year's of experience" },
-    { id: 3, total: 3, desc: "SPECIALIZATIONS" },
-    { id: 4, total: "12+", desc: "Technologies" },
+    { id: 1, total: "10+", desc: "Design & dev projects" },
+    { id: 2, total: 1, desc: "Year's of experience" },
+    { id: 3, total: 2, desc: "SPECIALIZATIONS" },
+    { id: 4, total: "10+", desc: "Technologies" },
   ]
 
   // Motion variants
@@ -43,11 +43,11 @@ export default function About() {
         </motion.span>
 
         <motion.h1 className={styles.title} variants={fadeUp}>
-          Transforming Ideas Into Intelligent Digital Solutions
+       Turning Ideas Into Motion-Driven Interfaces
         </motion.h1>
 
         <motion.p className={styles.aboutDesc} variants={fadeUp}>
-          I'm Narmesh Kumar Sah, a creative technologist based in Kathmandu, Nepal. I specialize in Web Design & Development, Graphic Design, and AI/ML Algorithm Development. With just over 2 years of professional experience, I create innovative digital solutions that combine stunning visual design with powerful technology. I excel at developing responsive web applications, crafting compelling brand identities, and building intelligent AI-powered systems that solve real-world problems.
+     I’m Bilal Malik, a frontend developer focused on building modern, high-performance web experiences. I specialize in React, Next.js, Tailwind CSS, and motion-driven UI, creating interfaces that are fast, responsive, and visually engaging. With hands-on experience in crafting scalable frontend architectures, smooth animations, and pixel-perfect layouts, I enjoy turning ideas into intuitive digital products that feel polished and production-ready.
         </motion.p>
 
         <motion.div className={styles.aboutDataWrapper} variants={wrapperVariant}>

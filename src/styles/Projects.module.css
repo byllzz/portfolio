@@ -55,15 +55,16 @@
   padding: 8px 16px;
   margin: 0;
   border-radius: 999px;
+  font-weight: 600;
 }
 
 .filterBtns .filterBtn:hover {
-  border: 2px solid #ff0000;
-  color: #ff0000;
+  border: 2px solid #fff;
+  color: #fff;
 }
 
 .filterBtns button.active {
-  background-color: #ff0000;
+  background-color: #fff;
   color: #000;
 }
 .projectsWrapper {
@@ -91,7 +92,7 @@
 }
 
 .projectsWrapper::-webkit-scrollbar-thumb {
-  background: #ff0000;
+  background: #fff;
   border-radius: 5px;
 }
 
@@ -165,8 +166,9 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: radial-gradient(circle at 30% 30%, #ffd700, #b8860b);
-  border: 1px solid #8b6914;
+  /* background: radial-gradient(circle at 30% 30%, #ffd700, #b8860b); */
+  background-color: #fff;
+  border: 1px solid #000;
   box-shadow:
     inset -2px -2px 4px rgba(0, 0, 0, 0.3),
     2px 2px 4px rgba(0, 0, 0, 0.2);
@@ -228,42 +230,21 @@
   position: relative;
   padding-inline: 10px;
 }
+
 .doorContent h1 {
 font-family: "Instrument Serif" , sans-serif;
 font-size: 25px;
 font-style:normal;
 font-weight: bold;
 }
-.projectInfo span {
-  font-family: "Jetbrains Mono" ,sans-serif;
-  font-size: 8px;
-  letter-spacing: 1px;
-  color: #888888;
-  text-transform: uppercase;
-}
+
 
 .projectInfo p {
   font-size: 14px;
   font-family: "Outfit" ,sans-serif;
   line-height: 1.1;
 }
-.liveBtn {
-  position: absolute;
-  right: 20px;
-  top: -20px;
-  border-radius: 50%;
-  height: 50px;
-  width: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #000;
-}
-@media screen and (max-width :1080px) {
-.projectGuide {
-  display: none;
-}
-}
+
 @media  screen and (max-width : 700px) {
   .projectsHeader {
     flex-direction: column;

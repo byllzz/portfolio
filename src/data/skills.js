@@ -1,95 +1,79 @@
- export const dev_skills = [
+// Core Frontend Development Skills
+export const dev_skills = [
   'HTML5 & CSS3 + Responsive',
-  "JavaScript (ES6+)",
-  "UI/UX",
-  "React JS",
-  "Next JS"
+  'JavaScript (ES6+)',
+  'UI/UX Design',
+  'React.js',
+  'Next.js',
+  'TypeScript',
+  'Tailwind CSS / CSS-in-JS'
 ];
 
-export const graphics_skills = [
-  "Brand identity & Logo Design",
-  "Visuals Design & Composition",
-  "Typography & Color Theory",
-  "Motion Graphics & Animation",
-  "Figma, Canva"
+// Design & Interaction Skills
+export const design_skills = [
+  'Motion & Interaction Design',
+  'Visual Design & Composition',
+  'Typography & Color Theory',
+  'Wireframing & Prototyping',
+  'Figma / Adobe XD / Canva'
 ];
 
-export const others_skills = [
-  "Python Programming & Libraries",
-  "Machine Learning Algorithms",
-  "Deep Learning & Neural Networks",
-  "Charbot & AI Solutions",
-  "Data Analysis & Visualization"
-];
-
+// Other Developer Tools
 export const tools = [
-  "Git & Github",
-  "SQL & Database Management",
-  "Jupyter NoteBooks & IDEs",
-  "VS Code & Development Environment",
-  "Chrome DevTools & Debugging"
+  'Git & GitHub',
+  'VS Code & Extensions',
+  'Chrome DevTools',
+  'NPM / Yarn / Vite',
+  'Responsive Debugging & Testing'
 ];
 
-
+// Detailed Skill Descriptions
 export const skills_details = [
   // HTML5 & CSS3 + Responsive
-  "Strong foundation in semantic HTML5 and modern CSS3, with responsive layouts using Flexbox, Grid, and mobile-first design principles.",
+  'Strong foundation in semantic HTML5 and modern CSS3, with responsive layouts using Flexbox, Grid, and mobile-first design principles.',
 
   // JavaScript (ES6+)
-  "Proficient in modern JavaScript (ES6+), including async/await, closures, modules, and DOM manipulation for interactive web experiences.",
+  'Proficient in modern JavaScript (ES6+), including async/await, modules, closures, and DOM manipulation to create dynamic web interfaces.',
 
-  // UI/UX
-  "Skilled in UI/UX principles such as visual hierarchy, accessibility, spacing, color balance, and user-centered design for intuitive interfaces.",
+  // UI/UX Design
+  'Skilled in UI/UX principles such as accessibility, visual hierarchy, spacing, color balance, and user-centered design for intuitive interfaces.',
 
-  // React JS
-  "Experienced in building component-based applications with React, using hooks, state management, reusable components, and performance optimization.",
+  // React.js
+  'Experienced in building component-based applications with React, using hooks, context, reusable components, and performance optimization techniques.',
 
-  // Next JS
-  "Hands-on experience with Next.js including SSR, SSG, routing, API routes, and performance-focused production deployments.",
+  // Next.js
+  'Hands-on experience with Next.js including SSR, SSG, routing, API routes, and production-ready deployments with optimized performance.',
 
-  // Brand identity & Logo Design
-  "Ability to create strong brand identities through logo design, brand guidelines, and consistent visual language across platforms.",
+  // TypeScript
+  'Proficient in TypeScript for building type-safe, maintainable, and scalable frontend applications.',
 
-  // Visuals Design & Composition
-  "Expertise in visual composition, layout balance, contrast, and storytelling to produce engaging and impactful designs.",
+  // Tailwind CSS / CSS-in-JS
+  'Experience in modern styling approaches like Tailwind CSS and CSS-in-JS for rapid, maintainable, and responsive UI development.',
+
+  // Motion & Interaction Design
+  'Expertise in animations and interactive UI elements using Framer Motion or CSS transitions to enhance user experience.',
+
+  // Visual Design & Composition
+  'Strong sense of layout, composition, contrast, and storytelling to create visually appealing web pages.',
 
   // Typography & Color Theory
-  "Deep understanding of typography systems, font pairing, readability, and color theory to enhance visual communication.",
+  'Deep understanding of font pairing, readability, and color theory to craft clear and aesthetic web interfaces.',
 
-  // Motion Graphics & Animation
-  "Experience in motion graphics and animations to enhance UI interactions, storytelling, and visual engagement.",
+  // Wireframing & Prototyping
+  'Proficient in Figma, Adobe XD, and Canva for wireframing, prototyping, and creating design systems for frontend development.',
 
-  // Figma, Canva
-  "Proficient in Figma and Canva for wireframing, prototyping, design systems, and rapid visual content creation.",
+  // Git & GitHub
+  'Comfortable with Git and GitHub for version control, branching strategies, and collaborative workflows.',
 
-  // Python Programming & Libraries
-  "Strong Python skills with experience in popular libraries for automation, data processing, and AI-related workflows.",
+  // VS Code & Extensions
+  'Efficient with VS Code, extensions, debugging tools, and custom workflows to speed up frontend development.',
 
-  // Machine Learning Algorithms
-  "Understanding of core machine learning algorithms including regression, classification, clustering, and model evaluation.",
+  // Chrome DevTools
+  'Skilled in Chrome DevTools for inspecting elements, debugging, analyzing performance, and optimizing UI interactions.',
 
-  // Deep Learning & Neural Networks
-  "Experience working with neural networks, deep learning concepts, and frameworks for building intelligent models.",
+  // NPM / Yarn / Vite
+  'Experience managing project dependencies, running builds, and configuring Vite/Webpack for optimized development workflows.',
 
-  // Chatbot & AI Solutions
-  "Hands-on experience developing AI chatbots and intelligent solutions using NLP techniques and modern AI frameworks.",
-
-  // Data Analysis & Visualization
-  "Skilled in analyzing data and creating meaningful visualizations to extract insights and support decision-making.",
-
-  // Git & Github
-  "Comfortable with Git and GitHub for version control, collaboration, branching strategies, and code management.",
-
-  // SQL & Database Management
-  "Experience in SQL and database management, including querying, relational design, and data optimization.",
-
-  // Jupyter Notebooks & IDEs
-  "Proficient in using Jupyter Notebooks and modern IDEs for experimentation, documentation, and efficient development.",
-
-  // VS Code & Development Environment
-  "Highly efficient with VS Code, extensions, debugging tools, and customized development workflows.",
-
-  // Chrome DevTools & Debugging
-  "Strong debugging skills using Chrome DevTools for performance analysis, DOM inspection, and issue resolution."
+  // Responsive Debugging & Testing
+  'Ability to test and debug across multiple devices and viewports to ensure consistent, responsive designs.'
 ];
-

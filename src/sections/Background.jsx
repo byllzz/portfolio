@@ -3,30 +3,29 @@ import { motion } from 'framer-motion'
 import styles from '../styles/Background.module.css'
 
 export default function Background() {
-  const experiences = [
-    {
-      date: "2025 (Oct - Dec)",
-      title: "Brand Designer",
-      subtitle: "Freelance (The Biryani House)",
-      desc: "Designed materials to enhance brand visibility and contributed to improve customer engagement through cohesive marketing materials. Managed content strategy, video editing, and social media presence to drive consistent digital growth and strengthen the restaurant’s local brand identity."
-    },
-    {
-      date: "2025 (Oct - Dec)",
-      title: "Content Creator/Curator",
-      subtitle: "Self-Employed (yt/@Omtivational, yt/@KnoScience)",
-      desc: "Created and maintained an engaging content platform, designed 10 graphics/month along with posting schedule of 8 posts/month. Generated over 2 million clicks with over 80,000 watch hours, surpassing 11,000 subscribers & 2.4 million views."
-    },
-    {
-      date: "2025 (Oct - Dec)",
-      title: "Web App Designer/Developer",
-      subtitle: "Freelance (WiseWords)",
-      desc: "Revamped outdated design, improved sales by 50% over a period of 3 months after the revamp. Designed web pages with HTML/CSS/JS, maintaining clean, well-structured code for scalability and future enhancements."
-    },
-  ]
+ const experiences = [
+  {
+    date: "2025 (Oct - Dec)",
+    title: "Frontend Developer",
+    subtitle: "Freelance",
+    desc: "Built and optimized responsive web pages using HTML, CSS, and JavaScript. Implemented interactive UI components and animations to enhance user experience, improving website engagement and overall brand visibility."
+  },
+  {
+    date: "2025 (Oct - Dec)",
+    title: "Content & Web Creator",
+    subtitle: "Self-Employed ",
+    desc: "Developed frontend interfaces and visual content for web platforms, while managing content strategy. Delivered high-quality graphics and interactive elements, contributing to over 2M clicks, 80k+ watch hours, and 11k+ subscribers."
+  },
+  {
+    date: "2025 (Oct - Dec)",
+    title: "Web Application Designer/Developer",
+    subtitle: "Freelance (WiseWords)",
+    desc: "Redesigned and developed scalable web applications using React and modern JavaScript. Improved sales by 50% within 3 months through enhanced UI/UX, responsive layouts, and clean, maintainable code."
+  },
+];
+
 
   const leftDots = [0, 1, 2]
-
-  // variants for motion
   const container = {
     hidden: {},
     show: {

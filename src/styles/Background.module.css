@@ -46,12 +46,12 @@
 height: 30px;
 width: 30px;
 border-radius: 50%;
-border: 3px solid #ff0000;
+border: 3px solid #fff;
 }
 .tag span:last-child {
   height: 170px;
   width: 1px;
-  background-color: #ff0000;
+  background-color: #fff;
 }
 
 .tag:last-child span:last-child {

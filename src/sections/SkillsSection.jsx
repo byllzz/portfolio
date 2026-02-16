@@ -2,15 +2,16 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import styles from '../styles/SkillsSection.module.css';
 import ArrowIcon from '../components/ArrowIcon';
-import { dev_skills, graphics_skills, others_skills, tools, skills_details } from '../data/skills';
+import { dev_skills, design_skills, tools, skills_details } from '../data/skills';
+
 export default function SkillsSection() {
   const [openSkill, setOpenSkill] = useState(null);
 
+  // Updated categories for frontend focus
   const categories = [
-    { title: 'Web Design & Development', skills: dev_skills },
-    { title: 'Graphic & Brand Design', skills: graphics_skills },
-    { title: 'Artificial Intelligence & ML', skills: others_skills },
-    { title: 'Tools, Platforms & DevOps', skills: tools },
+    { title: 'Web Development', skills: dev_skills },
+    { title: 'Design & Interaction', skills: design_skills },
+    { title: 'Tools & Platforms', skills: tools },
   ];
 
   // Variants
@@ -39,9 +40,9 @@ export default function SkillsSection() {
     exit: { opacity: 0, height: 0, transition: { duration: 0.3, ease: 'easeIn' } },
   };
 
+  // Get the index of the skill for description
   const getSkillDetailIndex = skill => {
-    const allSkills = [...dev_skills, ...graphics_skills, ...others_skills, ...tools];
-
+    const allSkills = [...dev_skills, ...design_skills, ...tools];
     return allSkills.indexOf(skill);
   };
 

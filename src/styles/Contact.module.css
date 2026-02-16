@@ -50,7 +50,7 @@
   transition: border .3s ease;
 }
 .contactList li:hover {
-  border-color: #ff0000;
+  border-color: #fff;
 }
 .contactList li span {
   text-transform: uppercase;
@@ -84,7 +84,7 @@
   transition: background .3s ease;
 }
 .right button:hover {
-  background-color: #ff0000;
+  background-color: #fff;
   color: #000;
 }
 @media screen and  ( max-width :1255px) {

@@ -33,11 +33,14 @@ export default function Test() {
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.4, delay: motionDelay }}
             >
-              <img
-                src={bannerImage}
-                alt="banner"
-                className={styles.bannerImg}
-              />
+             <img
+  src={bannerImage}
+  alt={`Hero banner ${index + 1}`}
+  className={styles.bannerImg}
+  loading="lazy"
+  decoding="async"
+/>
+
 
               <div className={styles.overlap}>
                 <div
@@ -53,9 +56,10 @@ export default function Test() {
       </div>
 
       <div className={styles.heroLights}>
-        <span>Web De_(s/v),</span>
-        <span>Graphic Designer,</span>
-        <span>AI/ML Solutions Architect</span>
+       <span>React & Next.js </span>
+<span>UI/UX Focused Engineer,</span>
+<span>Performance-Driven Frontend</span>
+
       </div>
     </div>
   );
