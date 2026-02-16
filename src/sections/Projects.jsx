@@ -33,6 +33,10 @@ export default function Projects () {
 
   return (
     <section className={styles.projectsSection}>
+      {/* guide to open project */}
+      <div className={styles.projectGuide}>
+        <article>Please hover on project card to open!</article>
+      </div>
       {/* Header */}
       <motion.div
         className={styles.projectsHeader}
