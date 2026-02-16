@@ -1,12 +1,12 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import styles from '../styles/Hero.module.css';
+const letters = ['B','i','l','a','l','m','a','l','i','k'];
 
 import flower from '../assets/hero-banners/flowers.webp';
 import flower1 from '../assets/hero-banners/flowers1.webp';
 
-const letters = ['B','i','l','a','l','m','a','l','i','k'];
-const banners = [flower, flower1];
+ const banners = [flower, flower1];
 
 export default function Test() {
   return (

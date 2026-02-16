@@ -44,7 +44,7 @@ export default function Projects () {
         animate="show"
         variants={headerVariant}
       >
-        <h1>Projects</h1>
+        <h1>Projects I craft</h1>
         <div className={styles.filterBtns}>
           {['all', 'web', 'tool'].map((filter, i) => (
             <motion.button
