@@ -30,7 +30,6 @@ export default function About() {
 
   return (
     <section className={styles.aboutSection}>
-      {/* Add key to force re-animation on remount */}
       <motion.div
         className={styles.aboutSectionData}
         key="about-section"

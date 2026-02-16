@@ -26,7 +26,7 @@ export default function Background() {
 
   const leftDots = [0, 1, 2]
 
-  // Variants
+  // variants for motion
   const container = {
     hidden: {},
     show: {
@@ -59,18 +59,14 @@ export default function Background() {
         variants={container}
         key="background-section"
       >
-        {/* Tag */}
         <motion.span className={styles.tag} variants={fadeSlideLeft}>
           04 / WORK EXPERIENCE
         </motion.span>
-
-        {/* Heading */}
         <motion.h1 className={styles.heading} >
           Professional Background
         </motion.h1>
 
         <div className={styles.data}>
-          {/* Left dots */}
           <div className={styles.left}>
             {leftDots.map((dot, i) => (
               <motion.div className={styles.tag} key={i}
@@ -83,8 +79,6 @@ export default function Background() {
               </motion.div>
             ))}
           </div>
-
-          {/* Right experiences */}
           <div className={styles.right}>
             {experiences.map((exp, i) => (
               <motion.div className={styles.experience} key={i}

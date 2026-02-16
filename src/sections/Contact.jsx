@@ -9,8 +9,6 @@ export default function Contact() {
     { label: "Location", value: "Chachran Sharif , Pakistan" },
     { label: "Github", value: "github.com/byllzz", href: "https://github.com/byllzz", target: "_blank" },
   ]
-
-  // Container variant for staggered children
   const container = {
     hidden: {},
     show: {
@@ -45,7 +43,7 @@ export default function Contact() {
         viewport={{ once: false, amount: 0.3 }}
         variants={container}
       >
-        {/* Left side */}
+
         <motion.div className={styles.left} variants={container}>
           <motion.h1 variants={fadeSlideLeft}>
             Let's create something <br />extraordinary
@@ -69,8 +67,6 @@ export default function Contact() {
             ))}
           </ul>
         </motion.div>
-
-        {/* Right side button */}
         <motion.div className={styles.right} variants={fadeSlideRight}>
           <button>
             Contact

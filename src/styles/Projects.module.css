@@ -119,16 +119,13 @@
   z-index: 10;
 }
 
-/* Door panels */
 .doorLeft,
 .doorRight {
   width: 50%;
   height: 100%;
-  /* background: linear-gradient(145deg, #8b5e3c, #654321); */
  background: rgba(13, 13, 13, 0.96);
  backdrop-filter: blur(45px);
   border: 2px solid #88888866;
-  /* border: 3px solid #432100; */
   border-radius: 6px;
   position: absolute;
   top: 0;
@@ -139,19 +136,15 @@
   z-index: 2;
 }
 
-/* Left door opens to the left */
 .doorLeft {
   left: 0;
   transform-origin: left center;
 }
 
-/* Right door opens to the right */
 .doorRight {
   right: 0;
   transform-origin: right center;
 }
-
-/* Hover: swing doors open */
 .skyDoor:hover .doorLeft {
   transform: rotateY(-120deg);
   box-shadow:
@@ -165,7 +158,6 @@
     0 15px 30px rgba(0, 0, 0, 0.3);
 }
 
-/* Door handles */
 .doorHandle {
   width: 16px;
   height: 16px;
@@ -181,7 +173,6 @@
   animation: handle-shine 3s infinite alternate;
 }
 
-/* Handle positions */
 .doorLeft .doorHandle {
   right: 15px;
 }

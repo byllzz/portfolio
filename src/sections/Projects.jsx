@@ -33,11 +33,10 @@ export default function Projects () {
 
   return (
     <section className={styles.projectsSection}>
-      {/* guide to open project */}
       <div className={styles.projectGuide}>
         <article>Please hover on project card to open!</article>
       </div>
-      {/* Header */}
+
       <motion.div
         className={styles.projectsHeader}
         initial="hidden"
@@ -61,8 +60,6 @@ export default function Projects () {
           ))}
         </div>
       </motion.div>
-
-      {/* Projects */}
       <motion.div className={styles.projectsWrapper} layout initial="hidden" animate="show">
         <AnimatePresence>
           {filterProjects.map((item, i) => (
@@ -73,7 +70,7 @@ export default function Projects () {
               initial="hidden"
               animate="show"
               exit="exit"
-              custom={i} // stagger each project
+              custom={i} 
               layout
             >
               <div className={styles.skyDoor}>
