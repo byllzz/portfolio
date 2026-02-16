@@ -11,11 +11,11 @@ export default function App() {
   return (
   <>
   {/* <Hero />
-  <About />
+  <About />*/}
   <Projects />
-  <SkillsSection />*/}
-   {/* <Background />
-  <Contact />
+  {/* <SkillsSection />
+    <Background />
+ <Contact />
   <Footer /> */}
 
   </>

@@ -3,26 +3,9 @@ import SectionTag from '../components/SectionTag'
 import styles from '../styles/SkillsSection.module.css'
 import SectionTitle from '../components/SectionTitle'
 import ArrowIcon from '../components/ArrowIcon'
+import { dev_skills, graphics_skills, others_skills, tools } from "../data/skills";
 
 export default function SkillsSection() {
-
-  const dev_skills = [
-    'HTML5 & CSS3 / Responsive Design' ,
-    "JavaScript (ES6+)" , "UI/UX" , "React JS" , "Next JS"
-  ];
-
-  const graphics_skills=  [
-    "Brand identity & Logo Design",
-    "Visuals Design & Composition" , "Typography & Color Theory" , "Motion Graphics & Animation" , "Figma, Canva"
-  ];
-
-  const others_skills = [
-    "Python Programming & Libraries" ,"Machine Learning Algorithms" , "Deep Learning & Neural Networks" , "Charbot & AI Solutions", "Data Analysis & Visualization"
-  ];
-
-  const tools = [
-    "Git & Github", "SQL & Database Management" ,"Jupyter NoteBooks & IDEs" , "VS Code & Development Environment" , "Chrome DevTools & Debugging"
-  ];
 
   return (
 <section className={styles.skillsSection}>

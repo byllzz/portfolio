@@ -130,14 +130,14 @@ border: 3px solid #ff0000;
     padding-inline: 40px;
   }
   .backgroundData h1 {
-    font-size: 50px;
+    font-size: 55px;
   }
   .tag span:last-child {
     height: 260px  };
 }
 @media screen and (max-width : 480px) {
   .backgroundData h1 {
-    font-size: 35px;
+    font-size: 45px;
   }
   .tag span:last-child {
     height: 290px;
@@ -145,7 +145,7 @@ border: 3px solid #ff0000;
 }
 @media screen and (max-width : 420px) {
   .backgroundData h1 {
-    font-size: 30px;
+    font-size: 40px;
   }
   .tag span:last-child {
     height: 330px;
