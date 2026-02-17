@@ -119,7 +119,7 @@ See the [LICENSE](./LICENSE) file for more details.
 If you’d like to collaborate, report an issue, or share feedback, feel free to reach out:
 
 -  **Email:** bilalmlkdev@gmail.com
--  **Portfolio:** https://bilalmlk-portfolio.vercel.app
+-  **Portfolio:** https://uitemplate.vercel.app
 -  **GitHub:** https://github.com/byllzz
 
 If you like the design or animations, please ⭐ **star the repository** — it really helps and motivates future updates!
