@@ -1,4 +1,4 @@
-# <a href="https://bilalmlk-portfolio.vercel.app" target="_blank"> Frontend Developer Portfolio</a>
+# <a href="https://uitemplate.vercel.app" target="_blank"> Frontend Developer Portfolio</a>
 
 **This Portfolio** is a modern, motion-driven frontend showcase built with **React** & **CSS3**.
 It highlights high-performance UI, smooth animations, immersive interactions, and creative frontend engineering.
@@ -14,7 +14,7 @@ Built for speed, aesthetics, and clean architecture — fully responsive and opt
 </p>
 <br>
 
-[![Visit Portfolio](https://img.shields.io/badge/View-Portfolio-9B72FF?style=flat)](https://bilalmlk-portfolio.vercel.app)
+[![Visit Portfolio](https://img.shields.io/badge/View-Portfolio-9B72FF?style=flat)](https://uitemplate.vercel.app")
 <br>
 
 <img width="100%" alt="Portfolio Preview" src="./src/assets/preview.webp" />
