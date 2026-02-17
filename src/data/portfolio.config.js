@@ -2,6 +2,8 @@
 // PORTFOLIO TEMPLATE CONFIG ....
 // Edit this file to customize your data..
 
+// preloader name text array
+export const preloader = ["Y" , "o" , "u" , "r" , "n" , "a" , "m" , "e"]
 // for Seo
 export const seo = {
   title: "Your Name | Frontend Developer Portfolio",

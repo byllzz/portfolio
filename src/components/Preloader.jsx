@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import styles from "../styles/Preloader.module.css";
 
 // const letters = ["B", "I", "L", "A", "L"];
-import {hero} from '../data/portfolio.config';
+import {preloader} from '../data/portfolio.config';
 export default function Preloader() {
   return (
     <motion.div
@@ -13,7 +13,7 @@ export default function Preloader() {
       transition={{ duration: 0.6, ease: "easeInOut" }}
     >
       <div className={styles.logo}>
-        {hero.nameLetters.map((letter, i) => (
+        {preloader.map((letter, i) => (
           <motion.span
             key={i}
             initial={{ y: 40, opacity: 0 }}
