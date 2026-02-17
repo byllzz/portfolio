@@ -1,8 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import styles from "../styles/Preloader.module.css";
-
-// const letters = ["B", "I", "L", "A", "L"];
+// imprt from portfolio.config.js
 import {preloader} from '../data/portfolio.config';
 export default function Preloader() {
   return (

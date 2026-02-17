@@ -90,7 +90,6 @@ export const skills = {
 };
 
 // here you can add each skill details but remember must in order like the about skill you put ok...
-
 export const skillDetails = Array(16).fill(
   "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vulputate justo sed mauris volutpat."
 );
