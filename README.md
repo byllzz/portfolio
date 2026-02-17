@@ -103,6 +103,7 @@ cd portfolio
 npm install   # or yarn install
 npm run dev   # or yarn dev
 
+```
 ## 📄 License
 
 This project is licensed under the **MIT License**.
