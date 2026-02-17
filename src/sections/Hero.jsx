@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import styles from '../styles/Hero.module.css';
 
-// ✅ IMPORT FROM CONFIG
+// imprt from portfolio.config.js
 import { hero, heroBanners } from '../data/portfolio.config';
 
 export default function Hero() {
@@ -43,7 +43,7 @@ export default function Hero() {
         })}
       </div>
 
-      {/* ✅ Roles from config */}
+   {/* import from portfolio.config.js */}
       <div className={styles.heroLights}>
         {hero.roles.map((role, i) => (
           <span key={i}>{role}</span>

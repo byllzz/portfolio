@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import styles from '../styles/About.module.css';
 
-// ✅ IMPORT FROM CONFIG
+// imprt from portfolio.config.js
 import { hero, stats } from '../data/portfolio.config';
 import DownloadSvg from '../components/DownloadSvg';
 

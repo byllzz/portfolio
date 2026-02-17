@@ -3,13 +3,13 @@ import { motion, AnimatePresence } from 'framer-motion';
 import styles from '../styles/SkillsSection.module.css';
 import ArrowIcon from '../components/ArrowIcon';
 
-// ✅ IMPORT FROM CONFIG
+// imprt from portfolio.config.js
 import { skills, skillDetails } from '../data/portfolio.config';
 
 export default function SkillsSection() {
   const [openSkill, setOpenSkill] = useState(null);
 
-  // ✅ Categories generated from config
+  //  categories generated from config
   const categories = useMemo(
     () => [
       { title: 'Web Development', skills: skills.development },
@@ -53,7 +53,7 @@ export default function SkillsSection() {
     },
   };
 
-  // ✅ Skill description lookup
+  //  skill description lookup
   const getSkillDetail = skill => {
     const allSkills = [
       ...skills.development,

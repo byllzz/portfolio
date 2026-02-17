@@ -2,13 +2,13 @@ import React, { useState, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import styles from '../styles/Projects.module.css';
 
-// ✅ IMPORT FROM CONFIG
+// imprt from portfolio.config.js
 import { projects } from '../data/portfolio.config';
 
 export default function Projects() {
   const [activeFilter, setActiveFilter] = useState('all');
 
-  // ✅ Generate filters dynamically (template-ready)
+  //  generate filters dynamically
   const filters = useMemo(() => {
     const categories = projects.map(p => p.category.toLowerCase());
     return ['all', ...new Set(categories)];

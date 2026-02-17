@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import styles from '../styles/Contact.module.css';
 
-// ✅ IMPORT FROM CONFIG
+// imprt from portfolio.config.js
 import { contact } from '../data/portfolio.config';
 
 export default function Contact() {

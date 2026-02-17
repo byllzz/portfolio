@@ -2,11 +2,11 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import styles from '../styles/Background.module.css';
 
-// ✅ IMPORT FROM CONFIG
+// imprt from portfolio.config.js
 import { experiences } from '../data/portfolio.config';
 
 export default function Background() {
-  // dots count adapts to experience length (safe default)
+  // dots count adapts to experience length 
   const leftDots = Array.from(
     { length: Math.min(3, experiences.length) },
     (_, i) => i

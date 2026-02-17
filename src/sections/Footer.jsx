@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from '../styles/Footer.module.css';
 
-// ✅ IMPORT FROM CONFIG
+// imprt from portfolio.config.js
 import { footer } from '../data/portfolio.config';
 
 export default function Footer() {
