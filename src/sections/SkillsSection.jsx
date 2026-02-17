@@ -1,18 +1,23 @@
-import React, { useState } from 'react';
+import React, { useState, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import styles from '../styles/SkillsSection.module.css';
 import ArrowIcon from '../components/ArrowIcon';
-import { dev_skills, design_skills, tools, skills_details } from '../data/skills';
+
+// ✅ IMPORT FROM CONFIG
+import { skills, skillDetails } from '../data/portfolio.config';
 
 export default function SkillsSection() {
   const [openSkill, setOpenSkill] = useState(null);
 
-  // Updated categories for frontend focus
-  const categories = [
-    { title: 'Web Development', skills: dev_skills },
-    { title: 'Design & Interaction', skills: design_skills },
-    { title: 'Tools & Platforms', skills: tools },
-  ];
+  // ✅ Categories generated from config
+  const categories = useMemo(
+    () => [
+      { title: 'Web Development', skills: skills.development },
+      { title: 'Design & Interaction', skills: skills.design },
+      { title: 'Tools & Platforms', skills: skills.tools },
+    ],
+    []
+  );
 
   // Variants
   const fadeSlideLeft = {
@@ -36,14 +41,27 @@ export default function SkillsSection() {
 
   const detailVariant = {
     hidden: { opacity: 0, height: 0 },
-    show: { opacity: 1, height: 'auto', transition: { duration: 0.3, ease: 'easeOut' } },
-    exit: { opacity: 0, height: 0, transition: { duration: 0.3, ease: 'easeIn' } },
+    show: {
+      opacity: 1,
+      height: 'auto',
+      transition: { duration: 0.3, ease: 'easeOut' },
+    },
+    exit: {
+      opacity: 0,
+      height: 0,
+      transition: { duration: 0.3, ease: 'easeIn' },
+    },
   };
 
-  // Get the index of the skill for description
-  const getSkillDetailIndex = skill => {
-    const allSkills = [...dev_skills, ...design_skills, ...tools];
-    return allSkills.indexOf(skill);
+  // ✅ Skill description lookup
+  const getSkillDetail = skill => {
+    const allSkills = [
+      ...skills.development,
+      ...skills.design,
+      ...skills.tools,
+    ];
+    const index = allSkills.indexOf(skill);
+    return skillDetails[index];
   };
 
   return (
@@ -58,7 +76,12 @@ export default function SkillsSection() {
           03 / Technical Expertise
         </motion.span>
 
-        <motion.h1 className={styles.title} variants={fadeScale} initial="hidden" animate="show">
+        <motion.h1
+          className={styles.title}
+          variants={fadeScale}
+          initial="hidden"
+          animate="show"
+        >
           Skills, Tools & Technologies
         </motion.h1>
 
@@ -75,16 +98,25 @@ export default function SkillsSection() {
               }}
             >
               <h2>{cat.title}</h2>
+
               {cat.skills.map((skill, i) => (
-                <motion.li key={i} custom={i} variants={listItem} className={styles.skillItem}>
+                <motion.li
+                  key={skill}
+                  custom={i}
+                  variants={listItem}
+                  className={styles.skillItem}
+                >
                   <div
                     className={styles.skillHeader}
-                    onClick={() => setOpenSkill(openSkill === skill ? null : skill)}
+                    onClick={() =>
+                      setOpenSkill(openSkill === skill ? null : skill)
+                    }
                   >
                     <div className={styles.header}>
                       <ArrowIcon height={10} width={10} fill="#fff" />
                       {skill}
                     </div>
+
                     <AnimatePresence>
                       {openSkill === skill && (
                         <motion.div
@@ -94,7 +126,7 @@ export default function SkillsSection() {
                           animate="show"
                           exit="exit"
                         >
-                          <p>{skills_details[getSkillDetailIndex(skill)]}</p>
+                          <p>{getSkillDetail(skill)}</p>
                         </motion.div>
                       )}
                     </AnimatePresence>
