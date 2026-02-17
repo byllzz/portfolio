@@ -22,9 +22,9 @@ export const hero = {
   tagline: "Transforming Ideas Into Engaging Web Experiences",
   about : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, ad consequatur? At veritatis ex enim repellendus, inventore a neque facilis?Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, veniam. Aliquid, placeat earum! Atque, eligendi.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vulputate justo sed mauris volutpat.",
   roles: [
-    "Frontend Developer,",
-    "UI Engineer,",
-    "Motion-Driven Web Experiences",
+    "React Js , Next Js",
+    "Frontend Developer, Js Developer",
+    "Motion-Driven Web ",
   ],
 };
 
