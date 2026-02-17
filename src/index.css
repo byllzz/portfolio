@@ -45,8 +45,8 @@ body {
 }
 
 ::selection {
-  background-color: #ff0000;
-  color: #fff;
+  background-color: #fff;
+  color: #000;
 }
 
 img , picture, video , canvas , svg {
