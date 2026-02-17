@@ -14,7 +14,7 @@ Built for speed, aesthetics, and clean architecture — fully responsive and opt
 </p>
 <br>
 
-[![Visit Portfolio](https://img.shields.io/badge/View-Portfolio-9B72FF?style=flat)](https://uitemplate.vercel.app")
+[![Visit Portfolio](https://img.shields.io/badge/View-Portfolio-9B72FF?style=flat)](https://uitemplate.vercel.app)
 <br>
 
 <img width="100%" alt="Portfolio Preview" src="./src/assets/preview.webp" />
