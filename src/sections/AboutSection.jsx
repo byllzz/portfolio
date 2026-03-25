@@ -1,7 +1,7 @@
 import React from 'react'
 import { GoArrowRight } from 'react-icons/go';
 import {Link} from 'react-router-dom'
-export default function About() {
+export default function AboutSection() {
   return (
     <div className="w-full max-w-full flex flex-col items-start gap-2 bg-black text-white rounded-[30px] pr-10 pl-6 pt-5 pb-7">
       <h3 className="text-[36px] text-[#E6E6E6] font-medium font-bai">Hello, I'm Bilal</h3>

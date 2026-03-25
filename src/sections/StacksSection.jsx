@@ -1,21 +1,28 @@
 import React from 'react';
 import { PiBoundingBoxDuotone } from 'react-icons/pi';
-
 import { GoArrowRight } from 'react-icons/go';
 
-// Your list of skills
+//  list of skills
 const SKILLS = [
-  "React", "Next.js", "Tailwind CSS", "TypeScript", "JavaScript",
-  "Framer Motion", "HTML5", "CSS3", "Redux", "Node.js", "GraphQL", "Vue"
+  'React',
+  'Next.js',
+  'Tailwind CSS',
+  'TypeScript',
+  'JavaScript',
+  'Framer Motion',
+  'HTML5',
+  'CSS3',
+  'Redux',
+  'Node.js',
+  'GraphQL',
+  'Vue',
 ];
 
-export default function Skills() {
-  // We duplicate the array so the infinite scroll never has a blank gap
+export default function StacksSection() {
   const duplicatedSkills = [...SKILLS, ...SKILLS];
 
   return (
     <div className="w-full max-w-full bg-black text-[#E6E6E6] flex flex-col items-start rounded-[30px] py-8 px-4 overflow-hidden">
-
       {/* Header */}
       <div className="flex items-center gap-2 mb-6 relative bottom-2 left-3">
         <span className="text-[22px] text-green-500">
@@ -47,9 +54,8 @@ export default function Skills() {
         }
       `}</style>
 
-      {/* Marquee Container with the Fading Edges */}
+      {/* Marquee Container  */}
       <div className="relative w-full flex flex-col gap-3 overflow-hidden pause-on-hover [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
-
         {/* Row 1: Scrolling Left */}
         <div className="flex w-max animate-scroll-left gap-3">
           {duplicatedSkills.map((skill, index) => (
@@ -75,7 +81,7 @@ export default function Skills() {
           ))}
         </div>
 
-        {/* Row 3: Scrolling Left (Slightly Faster) */}
+        {/* Row 3: Scrolling Left ) */}
         <div className="flex w-max animate-scroll-left gap-3" style={{ animationDuration: '20s' }}>
           {/* Shuffling the starting point for visual variety */}
           {[...duplicatedSkills.slice(4), ...duplicatedSkills.slice(0, 4)].map((skill, index) => (
@@ -87,15 +93,14 @@ export default function Skills() {
             </div>
           ))}
         </div>
-
       </div>
 
-       <button className="group mt-3 w-full p-[11px] flex items-center justify-center font-bai gap-2 font-medium text-[#a07af9] text-[14px] cursor-pointer bg-[#111] rounded-xl relative top-3">
-              More about Me{' '}
-              <span className='text-[#a07af9] text-[18px] transition-transform duration-500 group-hover:translate-x-1'>
-                <GoArrowRight />
-              </span>
-            </button>
+      <button className="group mt-3 w-full p-[11px] flex items-center justify-center font-bai gap-2 font-medium text-[#a07af9] text-[14px] cursor-pointer bg-[#111] rounded-xl relative top-3">
+        More about Me{' '}
+        <span className="text-[#a07af9] text-[18px] transition-transform duration-500 group-hover:translate-x-1">
+          <GoArrowRight />
+        </span>
+      </button>
     </div>
   );
 }

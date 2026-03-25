@@ -1,6 +1,6 @@
 import React from 'react'
 import { GoArrowRight } from 'react-icons/go';
-export default function Talk() {
+export default function TalkToMe() {
   return (
     <div className="mt-8 w-full max-w-full bg-black text-[#E6E6E6] font-bai p-3 rounded-[30px] flex items-center justify-center relative overflow-hidden group">
       <h1 className="font-bai text-[175px] font-medium transition-opacity duration-500 group-hover:opacity-50">Let's Talk</h1>

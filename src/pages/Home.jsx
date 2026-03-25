@@ -1,20 +1,22 @@
 import React from 'react'
-import About from '../components/About';
+import AboutSection from '../sections/AboutSection';
 import Experience from '../components/Experience';
-import Skills from '../components/Skills'
-import Location from '../components/Location'
-import Projects from '../components/Projects';
-import ContactSection from '../components/ContactSection';
+import StacksSection from '../sections/StacksSection';
+import Location from '../sections/Location';
+import ProjectsSection from '../sections/ProjectsSection';
+import ContactSection from '../sections/ContactSection';
+
+
 export default function Home() {
   return (
     <div className="container">
-      <About />
+      <AboutSection />
       <Experience />
       <div className="grid grid-cols-2 items-center w-full max-w-full mt-6 rounded-[30px] gap-5">
         <Location />
-        <Skills />
+        <StacksSection />
       </div>
-      <Projects startVal={0} endVal={4} />
+      <ProjectsSection startVal={0} endVal={4} />
       <ContactSection />
     </div>
   );

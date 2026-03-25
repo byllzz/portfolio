@@ -1,7 +1,7 @@
 import React from 'react'
-import Logo from './Logo'
-import Links from './Links'
-import HireBadge from './HireBadge'
+import Logo from '../components/Logo'
+import Links from '../components/Links'
+import HireBadge from '../components/HireBadge'
 
 export default function Navbar() {
   return (

@@ -2,30 +2,30 @@ import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 // Components
-import Navbar from './components/Navbar/Navbar';
+import Navbar from './sections/Navbar';
 import Doc from './components/Doc';
 import Cursor from './components/Cursor';
-import Footer from './components/Footer';
+import Footer from './sections/Footer';
 
 // Pages
 import Home from './pages/Home';
-import AboutPage from './pages/About/AboutPage';
-import ProjectsPage from './pages/Projects/ProjectsPage'; // Double-check if this is ProjectsPage or ProjectPage
-import SkillsPage from './pages/Skills/SkillsPage';
-import ContactPage from './pages/Contact/ContactPage';
+import About from './pages/About';
+import Projects from './pages/Projects';
+import Stacks from './pages/Stacks';
+import Contact from './pages/Contact';
 
 export default function App() {
   return (
     <BrowserRouter>
-      <div className='container'>
+      <div className="container">
         <Navbar />
 
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/aboutpage" element={<AboutPage />} />
-          <Route path="/projectpage" element={<ProjectsPage />} />
-          <Route path="/skillspage" element={<SkillsPage />} />
-          <Route path="/contactpage" element={<ContactPage />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/stacks" element={<Stacks />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
 
         <Doc />

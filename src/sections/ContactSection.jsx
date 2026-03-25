@@ -1,6 +1,7 @@
 import React from 'react';
 import { LuAtSign } from 'react-icons/lu';
 import { BsFillSendFill } from "react-icons/bs";
+
 const ContactSection = () => {
   return (
     <div className="bg-[#111] text-white pt-6 pb-4 px-6 rounded-[30px] w-full max-w-full mt-6">

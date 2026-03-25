@@ -2,12 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { motion, useSpring, useMotionValue } from 'framer-motion';
 
 export default function Cursor() {
-  // 1. Setup Motion Values for the raw mouse position
   const mouseX = useMotionValue(0);
   const mouseY = useMotionValue(0);
-
-  // 2. Create "Spring" versions for the smooth/delayed effect
-  // Adjust 'stiffness' and 'damping' to change the "weight" of the cursor
   const ringX = useSpring(mouseX, { stiffness: 150, damping: 20 });
   const ringY = useSpring(mouseY, { stiffness: 150, damping: 20 });
 
@@ -25,7 +21,7 @@ export default function Cursor() {
 
   return (
     <>
-      {/* The Outer Ring - Smooth Delay */}
+    {/* outer ring */}
       <motion.div
         style={{
           x: ringX,
@@ -39,7 +35,7 @@ export default function Cursor() {
         }}
       />
 
-      {/* The Inner Dot - Instant Follow */}
+      {/* inner dot*/}
       <motion.div
         style={{
           x: mouseX,

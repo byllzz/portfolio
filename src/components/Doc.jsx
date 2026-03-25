@@ -9,13 +9,13 @@ export default function Doc() {
 
   const navItems = [
     { id: 'home', icon: <HiOutlineHome size={22} />, label: 'Home', to: "/" },
-    { id: 'about', icon: <FaUser size={20} />, label: 'About', to: "/aboutpage" },
-    { id: 'projects', icon: <PiPencilLine size={22} />, label: 'Projects', to: "/projectpage" }, // Fixed label logic to match your array
-    { id: 'skills', icon: <HiOutlineViewGrid size={22} />, label: 'Skills', to: "/skillspage" },
+    { id: 'about', icon: <FaUser size={20} />, label: 'About', to: "/about" },
+    { id: 'projects', icon: <PiPencilLine size={22} />, label: 'Projects', to: "/projects" },
+    { id: 'skills', icon: <HiOutlineViewGrid size={22} />, label: 'Skills', to: "/stacks" },
     {
       id: 'contact',
       icon: <HiOutlinePaperAirplane size={22} className="rotate-45 relative bottom-[1px] left-[1px]" />,
-      label: 'Contact', to: "/contactpage"
+      label: 'Contact', to: "/contact"
     },
   ];
 
@@ -27,7 +27,6 @@ export default function Doc() {
             to={item.to}
             key={item.id}
             onClick={() => setActiveTab(item.id)}
-            // Added 'group' for tooltip support and fixed dimensions to w-12/h-12
             className={`group relative flex items-center justify-center w-12 h-12 rounded-full transition-all duration-300
               ${activeTab === item.id
                 ? 'bg-[#222222] text-white'
@@ -37,13 +36,11 @@ export default function Doc() {
             <span className="relative z-10">
               {item.icon}
             </span>
-
-            {/* Indicator Bar - Changed to white/purple glow like the screenshot */}
             {activeTab === item.id && (
               <div className="absolute -bottom-0.5 w-1 h-1 bg-white rounded-full shadow-[0_0_8px_rgba(255,255,255,0.8)]" />
             )}
 
-            {/* Tooltip - Now works because of the 'group' class above */}
+            {/* Tooltip */}
             <span className="absolute -top-10 scale-0 group-hover:scale-100 px-3 py-1 bg-[#1a1a1a] border border-white/10 text-white text-[11px] font-medium rounded-lg transition-all duration-200 pointer-events-none">
               {item.label}
             </span>

@@ -6,12 +6,10 @@ import { MdLocationPin } from 'react-icons/md';
 function Scene() {
   return (
     <>
-      {/* Lighting is essential - without it, the globe is pitch black */}
       <ambientLight intensity={1} />
       <pointLight position={[10, 10, 10]} intensity={1.5} />
 
       <group>
-        {/* The Outer Mesh (Wireframe) */}
         <mesh>
           <sphereGeometry args={[2.5, 32, 32]} />
           <meshStandardMaterial
@@ -22,12 +20,11 @@ function Scene() {
           />
         </mesh>
 
-        {/* The Inner Solid Sphere */}
         <Sphere args={[2.4, 32, 32]}>
           <meshStandardMaterial color="#111111" />
         </Sphere>
 
-        {/* Pakistan Marker - Adjusted position to be visible */}
+        {/* Pakistan Marker */}
         <mesh position={[1.2, 1.5, 1.5]}>
           <sphereGeometry args={[0.08, 16, 16]} />
           <meshBasicMaterial color="#a07af9" />
@@ -51,7 +48,7 @@ export default function Location() {
         <h3 className="font-bai text-[18px]">Chachran Sharif, Pakistan</h3>
       </div>
 
-      {/* CRITICAL: This div MUST have a fixed height like h-[300px] or h-[400px] */}
+      {/* canvas div */}
       <div className="w-full relative top-20 right-3  h-[280px] scale-125 flex items-center justify-center">
         <Canvas
           camera={{ position: [0, 0, 8], fov: 45 }}
