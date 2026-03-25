@@ -21,7 +21,7 @@ export default function Cursor() {
 
   return (
     <>
-    {/* outer ring */}
+      {/* outer ring */}
       <motion.div
         style={{
           x: ringX,
@@ -29,7 +29,7 @@ export default function Cursor() {
           translateX: '-50%',
           translateY: '-50%',
         }}
-        className="fixed top-0 left-0 w-8 h-8 border border-red-900 rounded-full pointer-events-none z-[9999] mix-blend-difference"
+        className="fixed top-0 left-0 w-8 h-8 border-[#a07af9] border-3 rounded-full pointer-events-none z-[9999]"
         animate={{
           scale: isHovering ? 1.5 : 1,
         }}
@@ -43,15 +43,18 @@ export default function Cursor() {
           translateX: '-50%',
           translateY: '-50%',
         }}
-        className="fixed top-0 left-0 w-3.5 h-3.5 bg-white rounded-full pointer-events-none z-[10000] mix-blend-difference"
+        className="fixed top-0 left-0 w-3.5 h-3.5 bg-[#a07af9] rounded-full pointer-events-none z-[10000]"
       />
 
       {/* Global CSS to hide the real cursor */}
       <style jsx global>{`
-        html, body {
+        html,
+        body {
           cursor: none !important;
         }
-        a, button, input {
+        a,
+        button,
+        input {
           cursor: none !important;
         }
       `}</style>

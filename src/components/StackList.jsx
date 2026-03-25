@@ -1,7 +1,9 @@
 import React from 'react';
-import { SiAngular, SiReact, SiNodedotjs, SiMongodb, SiHtml5,  SiFigma } from 'react-icons/si';
+import { motion } from 'framer-motion'; // animation
+import { SiAngular, SiReact, SiNodedotjs, SiMongodb, SiHtml5, SiFigma } from 'react-icons/si';
 
 const StackList = () => {
+  // stack data
   const skills = [
     {
       name: "Angular",
@@ -33,12 +35,6 @@ const StackList = () => {
       desc: "HTML5 is the backbone of my web design work. I use it to structure content, ensuring that websites are semantically meaningful and accessible. It forms the foundation upon which the visual elements of a site are built.",
       icon: <SiHtml5 className="text-[#e34f26]" />,
     },
-    // {
-    //   name: "CSS 3",
-    //   category: "Visual Styling",
-    //   desc: "CSS3 is my styling and layout powerhouse. It's instrumental in creating visually appealing websites by controlling everything from fonts and colors to the responsive design that adapts to various screen sizes.",
-    //   icon: <SiCss3 className="text-[#1572b6]" />,
-    // },
     {
       name: "Figma",
       category: "Collaborative Design",
@@ -47,31 +43,59 @@ const StackList = () => {
     }
   ];
 
-  return (
-    <div className="space bg-[#000] text-[#e6e6e6] px-8 py-7 rounded-[30px] font-bai">
-      <div className="space-y-12">
-        {skills.map((skill, index) => (
-          <div key={index} className="flex gap-4 group">
-            {/* Icon Container */}
-            <div className="flex-shrink-0 w-16 h-16 bg-white/5 rounded-[23px] border border-white/10 flex items-center justify-center text-2xl transition-colors group-hover:bg-white/10">
-              {skill.icon}
-            </div>
+  // stagger config
+  const containerVars = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: { staggerChildren: 0.15 }
+    }
+  };
 
-            {/* Content */}
-            <div className="space-y-2 relative top-4">
+  // item entry
+  const itemVars = {
+    hidden: { opacity: 0, x: -20 },
+    visible: { opacity: 1, x: 0, transition: { duration: 0.5 } }
+  };
+
+  return (
+    <div className="bg-[#000] text-[#e6e6e6] px-8 py-7 rounded-[30px] font-bai">
+      <motion.div
+        variants={containerVars}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, margin: "-100px" }}
+        className="space-y-12"
+      >
+        {skills.map((skill, index) => (
+          <motion.div
+            key={index}
+            variants={itemVars}
+            className="flex gap-4 group"
+          >
+            {/* icon box */}
+            <motion.div
+              whileHover={{ scale: 1.05, backgroundColor: "rgba(255,255,255,0.1)" }}
+              className="flex-shrink-0 w-16 h-16 bg-white/5 rounded-[23px] border border-white/10 flex items-center justify-center text-2xl transition-colors"
+            >
+              {skill.icon}
+            </motion.div>
+
+            {/* info block */}
+            <div className="space-y-2 relative top-1">
               <div>
-                <h3 className="text-lg font-medium leading-none">{skill.name}</h3>
+                <h3 className="text-lg font-medium leading-none mb-1">{skill.name}</h3>
                 <span className="text-[11px] text-gray-500 uppercase tracking-wider font-semibold">
                   {skill.category}
                 </span>
               </div>
-              <p className=" text-[16px] leading-7">
+              <p className="text-[16px] leading-7 text-white/70 group-hover:text-white transition-colors">
                 {skill.desc}
               </p>
             </div>
-          </div>
+          </motion.div>
         ))}
-      </div>
+      </motion.div>
     </div>
   );
 };

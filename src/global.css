@@ -13,6 +13,3 @@ body {
 .container {
   @apply w-full max-w-201 mx-auto pt-6 pb-15
 }
-.space  {
-  @apply mt-6
-}

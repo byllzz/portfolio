@@ -1,14 +1,39 @@
-import React from 'react'
+import React from 'react';
+import { motion } from 'framer-motion'; // animation core
 
-export default function ProjectsTitle({headerTitle , headerDesc}) {
+export default function ProjectsTitle({ headerTitle, headerDesc }) {
+  // animation config
+  const fadeUp = {
+    hidden: { opacity: 0, y: 10 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.5, ease: "easeOut" }
+    }
+  };
+
   return (
-    <div className="space w-full bg-black text-[#E6E6E6]
-    rounded-[30px] px-6 pb-6 pt-5 space-y-2">
-      <h3 className="font-bai text-[36px]">{headerTitle}</h3>
-      <p className='font-bai leading-6 text-[16px]'>
-       {headerDesc}
-      </p>
-    </div>
+    <motion.div
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true }}
+      className=" w-full bg-black text-[#E6E6E6] rounded-[30px] px-6 pb-6 pt-5 space-y-2"
+    >
+      {/* main title */}
+      <motion.h3
+        variants={fadeUp}
+        className="font-bai text-[36px] tracking-tight"
+      >
+        {headerTitle}
+      </motion.h3>
+
+      {/* description text */}
+      <motion.p
+        variants={fadeUp}
+        className="font-bai leading-6 text-[16px] text-white/70"
+      >
+        {headerDesc}
+      </motion.p>
+    </motion.div>
   );
 }
-
