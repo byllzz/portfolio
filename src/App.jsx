@@ -1,27 +1,35 @@
-import React from 'react'
-import Navbar from './components/Navbar/Navbar'
-import About from './components/About'
-import Experience from './components/Experience';
-import Skills from './components/Skills'
-import Location from './components/Location'
-import Projects from './components/Projects';
-import ContactSection from './components/ContactSection';
-import Footer from './components/Footer';
-export default function App
-() {
+import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
+// Components
+import Navbar from './components/Navbar/Navbar';
+import Doc from './components/Doc';
+import Cursor from './components/Cursor';
+
+// Pages
+import Home from './pages/Home';
+import AboutPage from './pages/AboutPage';
+import ProjectsPage from './pages/ProjectsPage'; // Double-check if this is ProjectsPage or ProjectPage
+import SkillsPage from './pages/SkillsPage';
+import ContactPage from './pages/ContactPage';
+
+export default function App() {
   return (
-    <div className="container">
-      <Navbar />
-      <About />
-      <Experience />
-      <div className="grid grid-cols-2 items-center w-full max-w-full mt-6 rounded-[30px] gap-5">
-        <Location />
-        <Skills />
+    <BrowserRouter>
+      <div className='container'>
+        <Navbar />
+
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/aboutpage" element={<AboutPage />} />
+          <Route path="/projectpage" element={<ProjectsPage />} />
+          <Route path="/skillspage" element={<SkillsPage />} />
+          <Route path="/contactpage" element={<ContactPage />} />
+        </Routes>
+
+        <Doc />
+        <Cursor />
       </div>
-      <Projects />
-      <ContactSection />
-      <Footer />
-    </div>
+    </BrowserRouter>
   );
 }
-
