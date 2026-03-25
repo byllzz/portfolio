@@ -2,7 +2,7 @@ import React from 'react';
 
 const AboutHero = () => {
   return (
-    <div className="bg-[#000] text-white py-6 font-bai px-6 rounded-[30px] mb-6">
+    <div className="space bg-[#000] text-white py-6 font-bai px-6 rounded-[30px]">
       <h1 className="text-[36px] font-semibold mb-2">Get to Know Me Better!</h1>
       <div className="space-y-6 text-[#E6E6E6] leading-5.5">
         <p>

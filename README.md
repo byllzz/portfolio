@@ -24,7 +24,7 @@ Built for speed, aesthetics, and clean architecture — fully responsive and opt
 
 ---
 
-# ✨ Features
+#  Features
 
 ✔️ Modern Hero Section with Motion Animations<br>
 ✔️ Fully Responsive (Mobile, Tablet & Desktop)<br>
@@ -51,7 +51,7 @@ Built for speed, aesthetics, and clean architecture — fully responsive and opt
 
 <br>
 
-## ⚙️ How It Works
+##  How It Works
 
 This portfolio is designed with **modular, reusable components** for flexibility and maintainability:
 
@@ -84,9 +84,9 @@ This portfolio is designed with **modular, reusable components** for flexibility
 
 ---
 
-## 🚀 Installation & Setup
+##  Installation & Setup
 
-### 1️⃣ Requirements
+###  Requirements
 
 Before you begin, ensure you have:
 
@@ -95,7 +95,7 @@ Before you begin, ensure you have:
 
 ---
 
-### 2️⃣ Clone the Repository
+###  Clone the Repository
 
 ```bash
 git clone https://github.com/byllzz/portfolio.git

@@ -22,14 +22,14 @@ const ContactDetails = () => {
   ];
 
   return (
-    <div className=" space-y-6 font-bai mt-6">
-      {/* 1. Header Card */}
+    <div className="space space-y-0 font-bai">
+      {/*  Header Card */}
       <div className="bg-[#000] w-full text-white p-5 rounded-[30px] ">
         <h1 className="text-[36px] font-medium tracking-tight">Let's Connect!</h1>
       </div>
 
-      {/* 2. Contact Links Card */}
-      <div className="bg-[#000] text-white p-6 rounded-[30px]">
+      {/*  Contact Links Card */}
+      <div className="space bg-[#000] text-white p-6 rounded-[30px]">
         {/* Section Title */}
         <div className="flex items-center gap-3 mb-8 text-[#4ade80]">
           <HiOutlineUser size={28} />

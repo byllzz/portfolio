@@ -9,7 +9,7 @@ const Education = () => {
   ];
 
   return (
-    <div className="bg-[#000] text-white py-6 px-6 rounded-[30px] mb-6 font-bai mt-6">
+    <div className="space bg-[#000] text-white py-6 px-6 rounded-[30px] font-bai ">
       <div className="flex items-center gap-2 mb-6 text-[#4ade80]">
         <HiOutlineAcademicCap size={24} />
         <h2 className="text-white text-xl font-medium">Education</h2>

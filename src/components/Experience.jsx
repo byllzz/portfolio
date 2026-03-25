@@ -18,7 +18,7 @@ export default function Experience() {
     },
   ];
   return (
-    <div className="mt-5 w-full max-w-full flex flex-col gap-6 bg-black px-6 py-7 text-[#E6E6E6] rounded-[30px] ">
+    <div className="space w-full max-w-full flex flex-col gap-6 bg-black px-6 py-7 text-[#E6E6E6] rounded-[30px] ">
       <div className="flex items-center gap-2.5">
         <span className="text-[21px] text-green-500">
           <VscGlobe />

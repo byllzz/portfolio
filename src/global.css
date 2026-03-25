@@ -11,5 +11,8 @@ body {
   @apply bg-[#ccc]
 }
 .container {
-  @apply w-full max-w-201 mx-auto pt-5 pb-10
+  @apply w-full max-w-201 mx-auto pt-6 pb-15
+}
+.space  {
+  @apply mt-6
 }

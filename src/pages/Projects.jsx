@@ -1,5 +1,5 @@
 import React from 'react'
-import Projects from '../sections/ProjectsSection'
+import ProjectsSection from '../sections/ProjectsSection'
 import TalkToMe from '../components/TalkToMe';
 import Header from '../components/Header'
 
@@ -11,11 +11,11 @@ export default function ProjectsPage() {
         functionality. Learning and improving projects consistently.`
   }
   return (
-    <div className="container">
+    <>
       <Header headerTitle={comp_header.title} headerDesc={comp_header.desc} />
-      <Projects startVal={0} />
+      <ProjectsSection startVal={0} />
       <TalkToMe />
-    </div>
+    </>
   );
 }
 

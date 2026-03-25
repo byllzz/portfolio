@@ -48,7 +48,7 @@ const StackList = () => {
   ];
 
   return (
-    <div className="bg-[#000] text-[#e6e6e6] px-8 py-7  rounded-[30px] mt-6 font-bai">
+    <div className="space bg-[#000] text-[#e6e6e6] px-8 py-7 rounded-[30px] font-bai">
       <div className="space-y-12">
         {skills.map((skill, index) => (
           <div key={index} className="flex gap-4 group">

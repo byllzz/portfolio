@@ -70,8 +70,10 @@ export default function ProjectsSection({ startVal, endVal }) {
       },
     },
   ];
+
+
   return (
-    <div className="w-full max-w-full bg-black text-[#E6E6E6] flex flex-col items-start rounded-[30px] pt-6 pb-6 px-6 overflow-hidden mt-6">
+    <div className="space w-full max-w-full bg-black text-[#E6E6E6] flex flex-col items-start rounded-[30px] pt-6 pb-6 px-6 overflow-hidden">
       <div className="flex items-center gap-2">
         <span className="text-[20px] text-green-500">
           <PiPencilLine />
@@ -123,7 +125,7 @@ export default function ProjectsSection({ startVal, endVal }) {
       </div>
 
       <Link
-        to="/projectpage"
+        to="/projects"
         className="group mt-5 w-full p-[11px] flex items-center justify-center font-bai gap-2 font-medium text-[#a07af9] text-[14px] cursor-pointer bg-[#111] py-3 rounded-xl"
       >
         More Projects{' '}

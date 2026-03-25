@@ -10,7 +10,7 @@ const Achievements = () => {
   ];
 
   return (
-    <div className="bg-[#000] text-white py-6 px-6 rounded-[30px] font-bai ">
+    <div className="space bg-[#000] text-white py-6 px-6 rounded-[30px] font-bai ">
       <div className="flex items-center gap-2 mb-8 text-[#4ade80]">
         <HiOutlineBadgeCheck size={24} />
         <h2 className="text-white text-xl font-medium">Achievements</h2>

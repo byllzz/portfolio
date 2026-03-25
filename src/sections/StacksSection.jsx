@@ -1,7 +1,7 @@
 import React from 'react';
 import { PiBoundingBoxDuotone } from 'react-icons/pi';
 import { GoArrowRight } from 'react-icons/go';
-
+import {Link} from 'react-router-dom'
 //  list of skills
 const SKILLS = [
   'React',
@@ -95,12 +95,12 @@ export default function StacksSection() {
         </div>
       </div>
 
-      <button className="group mt-3 w-full p-[11px] flex items-center justify-center font-bai gap-2 font-medium text-[#a07af9] text-[14px] cursor-pointer bg-[#111] rounded-xl relative top-3">
+      <Link to="/stacks" className="group mt-3 w-full p-[11px] flex items-center justify-center font-bai gap-2 font-medium text-[#a07af9] text-[14px] cursor-pointer bg-[#111] rounded-xl relative top-3">
         More about Me{' '}
         <span className="text-[#a07af9] text-[18px] transition-transform duration-500 group-hover:translate-x-1">
           <GoArrowRight />
         </span>
-      </button>
+      </Link>
     </div>
   );
 }

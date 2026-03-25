@@ -7,13 +7,13 @@ import TalkToMe from '../components/TalkToMe';
 
 export default function AboutPage() {
   return (
-    <div className='container'>
+    <>
       <AboutHero />
       <Experience />
       <Education />
       <Achievements />
       <TalkToMe />
-    </div>
+    </>
   )
 }
 

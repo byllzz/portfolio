@@ -12,11 +12,11 @@ export default function SkillsPage() {
         all devices..`,
    };
     return (
-      <div>
+      <>
         <Header headerTitle={comp_header.title} headerDesc={comp_header.desc} />
         <StackList />
         <TalkToMe />
-      </div>
+      </>
     );
   }
 
