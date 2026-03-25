@@ -6,7 +6,7 @@ const AboutHero = () => {
       <h1 className="text-[36px] font-semibold mb-2">Get to Know Me Better!</h1>
       <div className="space-y-6 text-[#E6E6E6] leading-5.5">
         <p>
-          Hello and Welcome to my portfolio. My name is <span className="text-white">Vishal Savita</span> and I'm specializing MERN/MEAN stack development. From my early college days, I've been fascinated by the GUI of Web Apps, Android OS and iOS design language and always have a desire to customize some elements in my style but it is only possible after learning a stack or design tool like Figma.
+          Hello and Welcome to my portfolio. My name is <span className="text-white">Bilal Malik</span> and I'm specializing in Frontend development. From my early college days, I've been fascinated by the GUI of Web Apps, Android OS and iOS design language and always have a desire to customize some elements in my style but it is only possible after learning a stack or design tool like Figma.
         </p>
         <p>
           So, My journey started with learning HTML5, CSS3 and JavaScript and continues to learn Angular, Typescript, NodeJS, Express.js, React and Mongodb like frameworks and libraries and is still learning new features of this tech stack. In this journey I've acquired a diverse set of skills with various software and technologies.

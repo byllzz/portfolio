@@ -8,8 +8,8 @@ export default function SkillsTitle() {
     >
       <h3 className="font-bai text-[30px]">Frontend Developer</h3>
       <p className="font-bai leading-6 text-[16px]">
-        My technical toolkit includes proficiency in MEAN/MERN Stack, Typescript, HTML/CSS and
-        various UI libraries like PrimeNG, Telerik, Bootstrap, Tailwind. I'm also well-versed in
+        My technical toolkit includes proficiency in Frontend Development, Typescript, HTML/CSS and
+        various UI libraries like React, Material UI, Bootstrap, Tailwind. I'm also well-versed in
         responsive web design, ensuring that websites I create look and function flawlessly across
         all devices.
       </p>
