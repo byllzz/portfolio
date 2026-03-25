@@ -5,7 +5,6 @@ import Skills from '../components/Skills'
 import Location from '../components/Location'
 import Projects from '../components/Projects';
 import ContactSection from '../components/ContactSection';
-import Footer from '../components/Footer';
 export default function Home() {
   return (
     <div className="container">
@@ -15,9 +14,8 @@ export default function Home() {
         <Location />
         <Skills />
       </div>
-      <Projects />
+      <Projects startVal={0} endVal={4} />
       <ContactSection />
-      <Footer />
     </div>
   );
 }

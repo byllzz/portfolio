@@ -6,15 +6,34 @@ import { GoArrowUpRight } from 'react-icons/go';
 import { HiLink } from 'react-icons/hi2';
 import { BsCodeSlash } from "react-icons/bs";
 
-
+import {Link} from 'react-router-dom'
 import { GoArrowRight } from 'react-icons/go';
 
 
 import f1 from '../assets/1.png'
 
-export default function Projects() {
-
+export default function Projects({startVal , endVal}) {
   const project_data = [
+    {
+      id: 1,
+      title : "Snippitkit",
+      tag: "Frontend" ,
+      banner : f1,
+      links : {
+        demo : "#" ,
+        repo : "#"
+      }
+    } ,
+    {
+      id: 1,
+      title : "Snippitkit",
+      tag: "Frontend" ,
+      banner : f1,
+      links : {
+        demo : "#" ,
+        repo : "#"
+      }
+    } ,
     {
       id: 1,
       title : "Snippitkit",
@@ -66,7 +85,7 @@ export default function Projects() {
       </div>
 
       <div className='grid grid-cols-2 gap-x-5 gap-y-10 mt-5'>
-        {project_data.map((item) => {
+        {project_data.slice(startVal , endVal).map((item) => {
           return (
             <div id={item.id} className="flex flex-col items-start gap-2">
               <img src={item.banner} alt="" className="h-95 rounded-[15px]" />
@@ -94,12 +113,12 @@ export default function Projects() {
         })}
       </div>
 
-       <button className="group mt-5 w-full p-[11px] flex items-center justify-center font-bai gap-2 font-medium text-[#a07af9] text-[14px] cursor-pointer bg-[#111] py-3 rounded-xl">
+       <Link to="/projectpage" className="group mt-5 w-full p-[11px] flex items-center justify-center font-bai gap-2 font-medium text-[#a07af9] text-[14px] cursor-pointer bg-[#111] py-3 rounded-xl">
               More Projects{' '}
               <span className='text-[#a07af9] text-[18px] transition-transform duration-500 group-hover:translate-x-1'>
                 <GoArrowRight />
               </span>
-            </button>
+            </Link>
     </div>
   )
 }

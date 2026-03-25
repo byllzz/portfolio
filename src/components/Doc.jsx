@@ -10,8 +10,8 @@ export default function Doc() {
   const navItems = [
     { id: 'home', icon: <HiOutlineHome size={22} />, label: 'Home', to: "/" },
     { id: 'about', icon: <FaUser size={20} />, label: 'About', to: "/aboutpage" },
-    { id: 'blog', icon: <PiPencilLine size={22} />, label: 'Blog', to: "/projectpage" }, // Fixed label logic to match your array
-    { id: 'projects', icon: <HiOutlineViewGrid size={22} />, label: 'Projects', to: "/skillspage" },
+    { id: 'projects', icon: <PiPencilLine size={22} />, label: 'Projects', to: "/projectpage" }, // Fixed label logic to match your array
+    { id: 'skills', icon: <HiOutlineViewGrid size={22} />, label: 'Skills', to: "/skillspage" },
     {
       id: 'contact',
       icon: <HiOutlinePaperAirplane size={22} className="rotate-45 relative bottom-[1px] left-[1px]" />,

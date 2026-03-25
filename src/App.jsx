@@ -5,13 +5,14 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar/Navbar';
 import Doc from './components/Doc';
 import Cursor from './components/Cursor';
+import Footer from './components/Footer';
 
 // Pages
 import Home from './pages/Home';
-import AboutPage from './pages/AboutPage';
-import ProjectsPage from './pages/ProjectsPage'; // Double-check if this is ProjectsPage or ProjectPage
-import SkillsPage from './pages/SkillsPage';
-import ContactPage from './pages/ContactPage';
+import AboutPage from './pages/About/AboutPage';
+import ProjectsPage from './pages/Projects/ProjectsPage'; // Double-check if this is ProjectsPage or ProjectPage
+import SkillsPage from './pages/Skills/SkillsPage';
+import ContactPage from './pages/Contact/ContactPage';
 
 export default function App() {
   return (
@@ -29,6 +30,7 @@ export default function App() {
 
         <Doc />
         <Cursor />
+        <Footer />
       </div>
     </BrowserRouter>
   );
