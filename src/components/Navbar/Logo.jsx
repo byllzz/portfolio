@@ -11,9 +11,9 @@ export default function Logo() {
         width={400}
         loading="eager"
         fetchpriority="high"
-        className="h-17 w-auto object-contain rounded-[22px] border border-3"
+        className="h-17 w-auto object-contain rounded-[24px] border border-3"
       />
-      <div className='flex flex-col items-start leading-1.1'>
+      <div className='flex flex-col items-start leading-1'>
        <h3 className="font-bai text-2xl tracking-wide text-[#524278] font-medium">Bilal Malik</h3>
        <span className='text-sm font-bai text-black/80'>Web Developer</span>
       </div>

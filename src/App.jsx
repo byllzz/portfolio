@@ -1,12 +1,27 @@
 import React from 'react'
 import Navbar from './components/Navbar/Navbar'
-
+import About from './components/About'
+import Experience from './components/Experience';
+import Skills from './components/Skills'
+import Location from './components/Location'
+import Projects from './components/Projects';
+import ContactSection from './components/ContactSection';
+import Footer from './components/Footer';
 export default function App
 () {
   return (
-    <div className='container'>
- <Navbar />
+    <div className="container">
+      <Navbar />
+      <About />
+      <Experience />
+      <div className="grid grid-cols-2 items-center w-full max-w-full mt-6 rounded-[30px] gap-5">
+        <Location />
+        <Skills />
+      </div>
+      <Projects />
+      <ContactSection />
+      <Footer />
     </div>
-  )
+  );
 }
 
