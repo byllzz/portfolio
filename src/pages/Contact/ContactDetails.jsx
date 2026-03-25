@@ -7,16 +7,16 @@ const ContactDetails = () => {
   const contactLinks = [
     {
       icon: <HiOutlineMail />,
-      label: 'vishalsavita809018@gmail.com',
-      href: 'mailto:vishalsavita809018@gmail.com',
+      label: 'bilalmlkdev@gmail.com',
+      href: 'mailto:bilalmlkdev@gmail.com',
     },
-    { icon: <HiOutlinePhone />, label: '7408932641', href: 'tel:7408932641' },
+    { icon: <HiOutlinePhone />, label: '923316995177', href: 'tel:923316995177' },
     {
       icon: <FaLinkedin />,
-      label: 'www.linkedin.com/in/vishal-savita-dev',
-      href: 'https://linkedin.com/in/vishal-savita-dev',
+      label: 'www.linkedin.com/in/bilalmlkdev',
+      href: 'https://linkedin.com/in/bilalmlkdev',
     },
-    { icon: <FaGithub />, label: 'github.com/Spacious74', href: 'https://github.com/Spacious74' },
+    { icon: <FaGithub />, label: 'github.com/byllzz', href: 'https://github.com/byllzz' },
     { icon: <FaHackerrank />, label: 'HackerRank', href: 'https://hackerrank.com' },
     { icon: <SiGeeksforgeeks />, label: 'GeeksForGeeks', href: 'https://geeksforgeeks.org' },
   ];
