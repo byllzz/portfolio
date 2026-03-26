@@ -79,7 +79,7 @@ function Scene() {
 
 export default function Location() {
   return (
-    <div className="w-full bg-black overflow-hidden text-[#E6E6E6] flex flex-col items-center rounded-[30px] border border-white/5 h-[330px] relative">
+    <div className="w-full bg overflow-hidden txt flex flex-col items-center rounded-[30px] border border-white/5 h-[330px] relative">
       {/* header overlay */}
       <div className="flex items-center gap-2 absolute top-6 left-6 z-10">
         <span className="text-[22px] text-green-500 animate-pulse">

@@ -21,7 +21,7 @@ const AboutHero = () => {
       variants={containerVars}
       initial="hidden"
       animate="visible"
-      className="space bg-[#000] text-white py-6 font-bai px-6 rounded-[30px]"
+      className="bg txt py-6 font-bai px-6 rounded-[30px]"
     >
       {/* main title */}
       <motion.h1
@@ -32,9 +32,9 @@ const AboutHero = () => {
       </motion.h1>
 
       {/* bio content */}
-      <div className="space-y-6 text-[#E6E6E6] leading-relaxed">
+      <div className="space-y-6 txt leading-5.5">
         <motion.p variants={textVars}>
-          Hello and Welcome to my portfolio. My name is <span className="text-white font-medium">Bilal Malik</span> and I'm specializing in Frontend development. From my early college days, I've been fascinated by the GUI of Web Apps, Android OS and iOS design language and always have a desire to customize some elements in my style but it is only possible after learning a stack or design tool like Figma.
+          Hello and Welcome to my portfolio. My name is <span className="txt font-medium">Bilal Malik</span> and I'm specializing in Frontend development. From my early college days, I've been fascinated by the GUI of Web Apps, Android OS and iOS design language and always have a desire to customize some elements in my style but it is only possible after learning a stack or design tool like Figma.
         </motion.p>
 
         <motion.p variants={textVars}>

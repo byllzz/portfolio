@@ -3,7 +3,7 @@ import { GoArrowRight } from 'react-icons/go';
 import {Link} from 'react-router-dom'
 export default function TalkToMe() {
   return (
-    <div className="space w-full max-w-full bg-black text-[#E6E6E6] font-bai p-3 rounded-[30px] flex items-center justify-center relative overflow-hidden group">
+    <div className="space w-full max-w-full bg txt font-bai p-3 rounded-[30px] flex items-center justify-center relative overflow-hidden group">
       <h1 className="font-bai text-[170px] font-medium transition-opacity duration-500 group-hover:opacity-50">Let's Talk</h1>
 
       <div className="absolute w-full h-full z-2 flex items-center justify-center">

@@ -11,7 +11,7 @@ export default function Links() {
     { id: 1, href: 'https://linkedin.com/bilalmlkdev', icon: FaLinkedin },
     { id: 2, href: 'https://github.com/byllzz', icon: RiGithubLine },
     { id: 3, href: 'https://uiverse.io/byllzz', icon: SiUikit },
-    { id: 4, href: 'https://github.com/byllzz', icon: SiReaddotcv },
+    { id: 4, href: '#', icon: SiReaddotcv },
   ];
 
   // animation variants
@@ -42,7 +42,7 @@ export default function Links() {
             variants={itemVars}
             whileHover={{ y: -4, scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
-            className="flex items-center justify-center bg-black text-[#a07af9] h-[42px] w-[42px] rounded-[14px] shadow-sm shadow-black transition-colors hover:text-white/80"
+            className="flex items-center justify-center bg text-[#a07af9] h-[42px] w-[42px] rounded-[14px] shadow-sm shadow-black transition-colors hover:text-white/80"
           >
             {Icon && <Icon className="text-[21px]" />}
           </motion.a>

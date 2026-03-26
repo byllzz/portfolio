@@ -20,13 +20,13 @@ export default function Experience() {
   };
 
   return (
-    <div className=" w-full max-w-full flex flex-col gap-6 bg-black px-6 py-7 text-[#E6E6E6] rounded-[30px]">
+    <div className=" w-full max-w-full flex flex-col gap-6 bg px-6 py-7 txt rounded-[30px]">
       {/* header */}
       <div className="flex items-center gap-2.5">
         <span className="text-[21px] text-green-500">
           <VscGlobe />
         </span>
-        <h3 className="text-[18px] font-bai text-[#E6E6E6] font-medium">Experience</h3>
+        <h3 className="text-[18px] font-bai txt font-medium">Experience</h3>
       </div>
 
       {/* data mapping */}
@@ -45,10 +45,10 @@ export default function Experience() {
 
             {/* text content */}
             <div className="flex flex-col items-start gap-2">
-              <h3 className="text-[16px] font-medium font-bai text-[#E6E6E6]">
+              <h3 className="text-[16px] font-medium font-bai txt">
                 {item.title} | {item.time}
               </h3>
-              <p className="font-bai text-[14px] text-white/50">
+              <p className="font-bai text-[14px] txt">
                 {item.where}
               </p>
             </div>

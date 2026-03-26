@@ -35,17 +35,17 @@ const ContactDetails = () => {
       <motion.div
         initial={{ opacity: 0, y: -10 }}
         animate={{ opacity: 1, y: 0 }}
-        className="bg-[#000] w-full text-white p-5 rounded-[30px] mb-4"
+        className="bg txt w-full p-5 rounded-[30px] mb-4"
       >
         <h1 className="text-[36px] font-medium tracking-tight">Let's Connect!</h1>
       </motion.div>
 
       {/* content card */}
-      <div className="bg-[#000] text-white p-6 rounded-[30px]">
+      <div className="bg txt p-6 rounded-[30px]">
         {/* subheader */}
         <div className="flex items-center gap-3 mb-8 text-[#4ade80]">
           <HiOutlineUser size={28} />
-          <h2 className="text-white text-2xl font-medium">Contact</h2>
+          <h2 className="txt text-2xl font-medium">Contact</h2>
         </div>
 
         {/* link grid */}
@@ -69,7 +69,7 @@ const ContactDetails = () => {
               <div className="text-indigo-400 text-xl transition-transform group-hover:scale-110">
                 {link.icon}
               </div>
-              <span className="text-gray-300 text-lg font-light truncate">
+              <span className="txt text-lg font-light truncate">
                 {link.label}
               </span>
             </motion.a>

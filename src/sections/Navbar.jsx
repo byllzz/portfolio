@@ -9,7 +9,7 @@ export default function Navbar() {
       <div className="relative right-[10px]">
         <Logo />
       </div>
-      <div className='relative left-2'>
+      <div className='hidden relative left-2 sm:block'>
         <HireBadge />
       </div>
       <div className="relative right-[6px]">

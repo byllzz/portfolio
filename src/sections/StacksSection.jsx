@@ -44,7 +44,7 @@ export default function StacksSection() {
   };
 
   return (
-    <div className="w-full  bg-[#0A0A0A] text-[#E6E6E6] flex flex-col rounded-[28px] p-5 overflow-hidden border border-white/10 shadow-2xl">
+    <div className="w-full  bg txt flex flex-col rounded-[28px] p-5 overflow-hidden border border-white/10 shadow-2xl">
       {/* Refined Header */}
       <div className="flex items-center justify-between mb-6">
         <div className="flex items-center gap-2.5">
@@ -84,7 +84,7 @@ export default function StacksSection() {
       {/* Modern Footer Link */}
       <Link
         to="/stacks"
-        className="relative top-9 group mt-6 flex items-center justify-center gap-2 w-full py-2.5 bg-[#111] hover:bg-[#161616] border border-white/5 rounded-xl transition-all"
+        className="relative top-9 group mt-6 flex items-center justify-center gap-2 w-full py-2.5 bg-[#1a1a1a] hover:bg-[#161616] border border-white/5 rounded-xl transition-all"
       >
         <span className="font-bai text-[12px] font-medium text-[#a07af9] group-hover:text-white transition-colors">
           View all tools

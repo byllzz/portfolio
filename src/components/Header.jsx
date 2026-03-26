@@ -17,7 +17,7 @@ export default function ProjectsTitle({ headerTitle, headerDesc }) {
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
-      className=" w-full bg-black text-[#E6E6E6] rounded-[30px] px-6 pb-6 pt-5 space-y-2"
+      className="w-full bg txt rounded-[30px] px-6 pb-6 pt-5 space-y-2"
     >
       {/* main title */}
       <motion.h3
@@ -30,7 +30,7 @@ export default function ProjectsTitle({ headerTitle, headerDesc }) {
       {/* description text */}
       <motion.p
         variants={fadeUp}
-        className="font-bai leading-6 text-[16px] text-white/70"
+        className="font-bai leading-6 text-[16px] txt"
       >
         {headerDesc}
       </motion.p>

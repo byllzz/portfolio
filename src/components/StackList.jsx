@@ -59,7 +59,7 @@ const StackList = () => {
   };
 
   return (
-    <div className="bg-[#000] text-[#e6e6e6] px-8 py-7 rounded-[30px] font-bai">
+    <div className="bg txt px-8 py-7 rounded-[30px] font-bai">
       <motion.div
         variants={containerVars}
         initial="hidden"
@@ -85,11 +85,11 @@ const StackList = () => {
             <div className="space-y-2 relative top-1">
               <div>
                 <h3 className="text-lg font-medium leading-none mb-1">{skill.name}</h3>
-                <span className="text-[11px] text-gray-500 uppercase tracking-wider font-semibold">
+                <span className="text-[11px] txt uppercase tracking-wider font-semibold">
                   {skill.category}
                 </span>
               </div>
-              <p className="text-[16px] leading-7 text-white/70 group-hover:text-white transition-colors">
+              <p className="text-[16px] leading-7 txt group-hover:text-white transition-colors">
                 {skill.desc}
               </p>
             </div>

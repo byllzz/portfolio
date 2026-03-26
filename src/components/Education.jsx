@@ -26,11 +26,11 @@ const Education = () => {
   };
 
   return (
-    <div className=" bg-[#000] text-white py-6 px-6 rounded-[30px] font-bai">
+    <div className="bg txt py-6 px-6 rounded-[30px] font-bai">
       {/* header section */}
       <div className="flex items-center gap-2 mb-6 text-[#4ade80]">
         <HiOutlineAcademicCap size={24} />
-        <h2 className="text-white text-xl font-medium">Education</h2>
+        <h2 className="txt text-xl font-medium">Education</h2>
       </div>
 
       {/* timeline list */}

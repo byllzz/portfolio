@@ -26,7 +26,7 @@ const Achievements = () => {
   };
 
   return (
-    <div className="bg-[#000] text-white py-6 px-6 rounded-[30px] font-bai">
+    <div className="bg txt font-bai py-6 px-6 rounded-[30px]">
       {/* header */}
       <div className="flex items-center gap-2 mb-8 text-[#4ade80]">
         <HiOutlineBadgeCheck size={24} />
@@ -57,7 +57,7 @@ const Achievements = () => {
             </div>
 
             {/* meta */}
-            <div className="flex items-center gap-2 text-lg text-gray-400 font-medium px-2 leading-5">
+            <div className="flex items-center gap-2 text-lg txt font-medium px-2 leading-5">
                <HiOutlineBadgeCheck className="text-blue-400 flex-shrink-0" />
                <span className="truncate">{cert.title}</span>
             </div>

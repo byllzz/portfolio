@@ -13,3 +13,9 @@ body {
 .container {
   @apply w-full max-w-201 mx-auto pt-6 pb-15
 }
+.bg {
+  @apply bg-[#0F0F0F]
+}
+.txt {
+  @apply text-[#E6E6E6]
+}
