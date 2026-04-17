@@ -48,9 +48,7 @@ Built for speed, aesthetics, and clean architecture — fully responsive and opt
 - **JavaScript (ES6+)**
 - **Vite** (if used)
 - **Vercel Deployment**
-
-<br>
-
+---
 ##  How It Works
 
 This portfolio is designed with **modular, reusable components** for flexibility and maintainability:
