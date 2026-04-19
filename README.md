@@ -112,7 +112,7 @@ See the [LICENSE](./LICENSE) file for more details.
 ---
 
 
-##  Contact & Feedback
+##  Contact
 
 If you’d like to collaborate, report an issue, or share feedback, feel free to reach out:
 
