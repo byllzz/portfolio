@@ -8,7 +8,7 @@
   --font-bai: "Bai Jamjuree", sans-serif;
 }
 body {
-  @apply bg-[#ccc]
+  @apply bg-[#cacaca]
 }
 .container {
   @apply w-full max-w-201 mx-auto pt-6 pb-15
@@ -18,4 +18,28 @@ body {
 }
 .txt {
   @apply text-[#E6E6E6]
+}
+/* Custom Scrollbar Styles */
+::-webkit-scrollbar {
+  width: 8px; /* Slimmer width */
+}
+
+::-webkit-scrollbar-track {
+  background: #ccc;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 10px;
+  border: 2px solid #ccc;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ccc;
+}
+
+/* For Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #524278 #000;
 }

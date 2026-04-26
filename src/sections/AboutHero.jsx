@@ -24,25 +24,30 @@ const AboutHero = () => {
       className="bg txt py-6 font-bai px-6 rounded-[30px]"
     >
       {/* main title */}
-      <motion.h1
-        variants={textVars}
-        className="text-[36px] font-semibold mb-2 tracking-tight"
-      >
+      <motion.h1 variants={textVars} className="text-[36px] font-semibold mb-2 tracking-tight">
         Get to Know Me Better!
       </motion.h1>
 
       {/* bio content */}
       <div className="space-y-6 txt leading-5.5">
         <motion.p variants={textVars}>
-          Hello and Welcome to my portfolio. My name is <span className="txt font-medium">Bilal Malik</span> and I'm specializing in Frontend development. From my early college days, I've been fascinated by the GUI of Web Apps, Android OS and iOS design language and always have a desire to customize some elements in my style but it is only possible after learning a stack or design tool like Figma.
+          Hello! I’m Bilal Malik, a Frontend Developer with a passion for building high-performance,
+          visually immersive web experiences
         </motion.p>
 
         <motion.p variants={textVars}>
-          So, My journey started with learning HTML5, CSS3 and JavaScript and continues to learn Angular, Typescript, NodeJS, Express.js, React and Mongodb like frameworks and libraries and is still learning new features of this tech stack. In this journey I've acquired a diverse set of skills with various software and technologies.
+          My journey began with a fascination for the design languages of Android and iOS. That
+          curiosity-the desire to deconstruct and customize GUIs—is what eventually led me from
+          Figma prototypes to the world of clean, scalable code
         </motion.p>
 
         <motion.p variants={textVars}>
-          I believe in staying ahead of the curve, constantly exploring emerging technologies and design trends to ensure that my work remains both timeless and cutting-edge. With a strong foundation in full-stack development and a keen interest in AI tools and UI/UX design, I strive to create visually appealing and user-friendly applications.
+          Today, I specialize in crafting seamless user interfaces using React and TypeScript. While
+          my roots are in the core pillars of the web (HTML5, CSS3, JS), I’ve expanded my toolkit to
+          include Angular, Node.js, and MongoDB, giving me a robust understanding of the full stack.
+          I don't just write code; I bridge the gap between design and engineering. I’m constantly
+          exploring emerging AI tools and UI/UX trends to ensure every application I build is both
+          cutting-edge and user-centric.
         </motion.p>
       </div>
     </motion.div>

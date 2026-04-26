@@ -1,9 +1,10 @@
 import React from 'react';
 import logo from '../assets/logo.webp';
+import {Link} from 'react-router-dom'
 
 export default function Logo() {
   return (
-    <div className="flex items-center gap-2">
+    <Link to="/" className="flex items-center gap-2" >
       <img
         src={logo}
         alt="Company Name Logo"
@@ -17,6 +18,6 @@ export default function Logo() {
        <h3 className="font-bai text-2xl tracking-wide text-[#524278] font-medium">Bilal Malik</h3>
        <span className='text-sm font-bai text-black/80'>Web Developer</span>
       </div>
-    </div>
+    </Link>
   );
 }

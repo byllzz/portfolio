@@ -1,12 +1,13 @@
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
-import { AnimatePresence } from 'framer-motion'; // motion core
+import { AnimatePresence } from 'framer-motion';
 
 // Components
 import Navbar from './sections/Navbar';
 import Doc from './components/Doc';
 import Cursor from './components/Cursor';
 import Footer from './sections/Footer';
+import SignaturePreloader from './components/ui/SignaturePreloader';
 
 // Pages
 import Home from './pages/Home';
@@ -15,7 +16,6 @@ import Projects from './pages/Projects';
 import Stacks from './pages/Stacks';
 import Contact from './pages/Contact';
 
-// small helper to fix scroll position on route change
 function ScrollToTop() {
   const { pathname } = useLocation();
   useEffect(() => {
@@ -26,7 +26,6 @@ function ScrollToTop() {
 
 function AnimatedRoutes() {
   const location = useLocation();
-
   return (
     <AnimatePresence mode="wait">
       <Routes location={location} key={location.pathname}>
@@ -41,13 +40,28 @@ function AnimatedRoutes() {
 }
 
 export default function App() {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 4500);
+
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <BrowserRouter>
+      {/* Preloader Logic */}
+      <AnimatePresence mode="wait">
+        {isLoading && <SignaturePreloader key="loader" />}
+      </AnimatePresence>
+
+      {/* Main Site Content */}
       <div className="container mx-auto px-4">
         <ScrollToTop />
         <Navbar />
 
-        {/* Animated route wrapper */}
         <AnimatedRoutes />
 
         <Doc />
